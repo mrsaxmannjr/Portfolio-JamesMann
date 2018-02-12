@@ -15,7 +15,6 @@ export default Video;
 
 const TheVideo = styled.video`
 grid-area: 1 / 1 / -1 / -1;
-//  z-index: -1;
 opacity: 0.2;
 height: 100%;
 width: 100%;

@@ -30,4 +30,8 @@ height: 100vh;
 grid-template: 52px 1fr 100px / auto;
 background: #222;
   color: #fff;
+Header, Main, Footer {
+  z-index: 1;
+}
+
 `;

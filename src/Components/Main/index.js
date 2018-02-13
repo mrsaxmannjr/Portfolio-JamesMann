@@ -6,9 +6,9 @@ class Main extends Component {
   render() {
     return (
       <TheMain>
-        <h1>I am James</h1>
+        <h1 id="intro">I am James</h1>
         <p>
-      I am a Full Stack Web Developer
+      I make stuff
         </p>
       </TheMain>
     );
@@ -18,7 +18,15 @@ class Main extends Component {
 export default Main;
 
 const TheMain = styled.div`
-grid-area: 2 / 1 / 3 / -1;
-  padding: 0 10% 200px;
-  align-self: center;
+max-width: 960px;
+margin: 60px auto;
+min-height: 70vh;
+padding: 100px 5% 80px;
+
+#intro{
+  margin-top: 40px;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1.2;
+  }
 `;

@@ -14,9 +14,17 @@ const Video = props => (
 export default Video;
 
 const TheVideo = styled.video`
-grid-area: 1 / 1 / -1 / -1;
 opacity: 0.2;
-height: 100%;
-width: 100%;
-object-fit: cover;
+position: fixed;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+left: 50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+display: inline-block;
 `;

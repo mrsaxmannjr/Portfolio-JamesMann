@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -25,13 +26,10 @@ class App extends Component {
 export default App;
 
 const GridDiv = styled.div`
-display: grid;
-height: 100vh;
-grid-template: 52px 1fr 100px / auto;
-background: #222;
-  color: #fff;
 Header, Main, Footer {
   z-index: 1;
 }
-
+display: grid;
+height: 100vh;
+grid-template: 52px 1fr 100px / auto;
 `;

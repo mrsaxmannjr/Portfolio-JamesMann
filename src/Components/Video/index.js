@@ -2,19 +2,21 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import video from "./hd0933.mov";
+
 const Video = props => (
   <TheVideo
     autoPlay
     loop
     muted
-    src="http://scotttolinski.com//static/showcase2.63abd12f.mp4"
+    src={video}
   />
 );
 
 export default Video;
 
 const TheVideo = styled.video`
-opacity: 0.2;
+opacity: 0.3;
 position: fixed;
 bottom: 0;
 min-width: 100%;

@@ -82,4 +82,4 @@ typings/
 .next
 
 # video
-/src/Components/Video/hd0933.mov
+*.mov

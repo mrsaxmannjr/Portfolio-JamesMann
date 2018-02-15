@@ -37,6 +37,7 @@ grid-area: 3 / 1 / 4 / -1;
   letter-spacing: 5px;
   text-align: center;
   font-size: 1.17em;
+  margin-bottom: 0;
 }
 text-align: center;
 

@@ -28,7 +28,7 @@ body {
   background: #111;
   line-height: 1.5;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 ul {

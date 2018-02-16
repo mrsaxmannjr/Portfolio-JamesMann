@@ -4,9 +4,8 @@ import styled from "styled-components";
 import github from "./github-sign.svg";
 import linkedIn from "./linkedin.svg";
 import talent from "./galvanize.png";
-import email from "./gmail.svg";
 
-const Footer = props => (
+const Footer = () => (
   <FooterNav>
     <h3 id="find-me">Come at me</h3>
     <nav>
@@ -16,11 +15,11 @@ const Footer = props => (
         </li>
 
         <li >
-          <Link to="https://www.linkedin.com/in/mrsaxmannjr/"><img src={linkedIn} /></Link>
+          <Link to="https://www.linkedin.com/in/mrsaxmannjr/" target="_blank"><img src={linkedIn} /></Link>
         </li>
 
         <li >
-          <Link to="https://talent.galvanize.com/students/2067"><img src={talent} /></Link>
+          <Link to="https://talent.galvanize.com/students/2067" target="_blank"><img src={talent} /></Link>
         </li>
       </ul>
     </nav>

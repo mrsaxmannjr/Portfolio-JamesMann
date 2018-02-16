@@ -1,22 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import Overdrive from "react-overdrive";
 import logo from "./js.png";
+import Video from "../Video";
 
-
-class Main extends Component {
-  render() {
-    return (
-      <TheMain>
+const Main = () => (
+  <div>
+    <Video />
+    <TheMain>
+      <h1 id="intro">I am James Mann</h1>
+      <p>I am a developer, musician, martial artist and gamer.</p>
+      <Overdrive id="img" duration="700">
         <img src={logo} />
-        <h1 id="intro">James Mann</h1>
-        <p>
-      I am a developer, musician, martial artist and gamer.
-        </p>
-      </TheMain>
-    );
-  }
-}
+      </Overdrive>
+    </TheMain>
+  </div>
+);
 
 export default Main;
 
@@ -24,16 +23,14 @@ const TheMain = styled.div`
 max-width: 960px;
 margin: 45px auto;
 min-height: 70vh;
-padding: 80px 5% 80px;
+padding: 80px 5% 0px;
+
 img {
-  position: absolute;
-  height: 570px;
-  opacity: .4;
-  z-index: -1;
+  height: 250px;
 }
 
 #intro{
-  margin-top: 100px;
+  margin-top: 30px;
   font-size: 64px;
   font-weight: 300;
   line-height: 1.2;

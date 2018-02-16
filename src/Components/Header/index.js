@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
-const Header = props => (
+const Header = () => (
   <TheHeader>
     <Link id="logo" to="/">
       <img src={logo} />
@@ -11,15 +12,19 @@ const Header = props => (
     <nav>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">ABOUT</Link>
         </li>
 
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/resume">RESUME</Link>
         </li>
 
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/projects">PROJECTS</Link>
+        </li>
+
+        <li>
+          <Link to="/contact">CONTACT</Link>
         </li>
       </ul>
     </nav>
@@ -45,7 +50,6 @@ top: 0;
 width: 100%;
 
 #logo {
-  color: #f1c40f;
   text-decoration: none;
   padding-left: 0;
   padding-top: 0;
@@ -63,14 +67,11 @@ a {
   color: #fff;
   padding: 15px 10px 18px;
   font-weight: 900;
-  text-transform: uppercase;
   -webkit-letter-spacing: 5px;
   -moz-letter-spacing: 5px;
   -ms-letter-spacing: 5px;
   letter-spacing: 5px;
   display: block;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   font-size: 16px;
   padding: 15px 0px 18px 40px;
   }
@@ -83,5 +84,8 @@ li {
   display: inline-block;
   margin-bottom: calc(1.45rem / 2);
   margin: 0;
+  img {
+    height: 100px;
+  }
     }
 `;

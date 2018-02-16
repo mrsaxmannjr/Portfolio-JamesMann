@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from "styled-components";
@@ -12,12 +13,14 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <GridDiv className="App">
-          <Header />
-          <Video />
-          <Main />
-          <Footer />
-        </GridDiv>
+        <MuiThemeProvider>
+          <GridDiv className="App">
+            <Header />
+            <Video />
+            <Main />
+            <Footer />
+          </GridDiv>
+        </MuiThemeProvider>
       </Router>
     );
   }
@@ -29,7 +32,5 @@ const GridDiv = styled.div`
 Header, Main, Footer {
   z-index: 1;
 }
-display: grid;
-height: 100vh;
-grid-template: 52px 1fr 100px / auto;
+
 `;

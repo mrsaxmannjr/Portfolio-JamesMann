@@ -22,7 +22,7 @@ bottom: 0;
 min-width: 100%;
 min-height: 100%;
 width: auto;
-height: auto;
+height: 100vh;
 z-index: -100;
 left: 50%;
 -webkit-transform: translateX(-50%);

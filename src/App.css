@@ -27,7 +27,8 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   background: #111;
   line-height: 1.5;
-  /* margin: 0; */
+  height: 100vh;
+  overflow: hidden;
 }
 
 ul {

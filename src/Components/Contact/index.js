@@ -12,9 +12,9 @@ const Contact = () => (
     </span>
     <div>
       <h1>CONTACT</h1>
-      <form>
+      <form method="post" encType="text/plain">
         <input type="text" name="name" placeholder="Your name" required="" />
-        <input type="text" name="email" placeholder="Your email" required="" />
+        <input type="email" name="email" placeholder="Your email" required="" />
         <textarea rows="5" name="message" placeholder="Your message" required="" />
         <button type="submit" id="submit">Send</button>
       </form>
@@ -22,6 +22,10 @@ const Contact = () => (
   </TheContact>
 );
 
+// portfolio-email-195420
+//  apikey: AIzaSyBvb-VB99YLsxuwvdruGTPdmEzKZNDyyBk
+// refresh: 1/mqv20bmS1Owarroy_RetOVYLnzlVBBaqQbv2b83gczU
+// accesstoken: ya29.GltkBWaiRJUbKhgeoMTpj6NmvlvP_h59qFeW76g45bfbUjHHaxaaqTo6QGz45SK_-qCiJOnQVun3LojvdWo6x9Y_VeoUS5mup5PozJlRqOZjT5gd2oVXtdUcvn-e
 export default Contact;
 
 const TheContact = styled.div`

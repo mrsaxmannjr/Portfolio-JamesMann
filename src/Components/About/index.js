@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
+import AnimatedMap from "../Map";
+
 const About = () => (
   <TheAbout>
     <span>
@@ -21,6 +23,7 @@ const About = () => (
       <p>I am a Colorado native and was raised in Fort Lupton, CO. From the day I got my first Nintendo Entertainment System, I have been enamored with video games and technology at large. This passion stayed with me as I discovered my next obsession in music. I followed the path music had laid out before me which literally led me around the globe and has now come full circle with me once again based in Colorado. Now, as the chapter of music has come to a close, I have fully immersed myself in first obsession.
       </p>
       <p>I studied at the University of Colorado, Boulder and received Bachelor's degrees in Music Performance (Saxophone, Jazz studies) and Music Education. I am a lifelong student of the martial arts and have studied Judo, Wrestling, Arnis/Eskrima, Shaolin Kung-Fu and most recently, Systema. I am a snowboarder, fitness enthusiast and gamer.</p>
+      <AnimatedMap />
     </div>
   </TheAbout>
 );

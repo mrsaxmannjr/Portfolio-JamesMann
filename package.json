@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cities.json": "^1.1.2",
+    "d3-geo": "^1.9.1",
+    "d3-scale": "^2.0.0",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-motion": "^0.5.2",
     "react-overdrive": "0.0.9",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "react-speed-dial": "^0.4.7",
-    "styled-components": "^3.1.6"
+    "react-simple-maps": "^0.10.3",
+    "styled-components": "^3.1.6",
+    "topojson-client": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

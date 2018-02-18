@@ -10,6 +10,7 @@ import {
 import { Motion, spring } from "react-motion";
 import { scaleLinear } from "d3-scale";
 import map from "./world-110m.json";
+import cities from "./cities-visited.json";
 
 const wrapperStyles = {
   width: "100%",
@@ -17,13 +18,15 @@ const wrapperStyles = {
   margin: "0 auto",
 };
 
-const cities = [
-  { name: "Singapore", coordinates: [103.8198, 1.3521] },
-  { name: "San Francisco", coordinates: [-122.4194, 37.7749] },
-  { name: "Sydney", coordinates: [151.2093, -33.8688] },
-  { name: "Buenos Aires", coordinates: [-58.3816, -34.6037] },
-  { name: "Shanghai", coordinates: [121.4737, 31.2304] },
-];
+// const cities = [
+//   { name: "Singapore", coordinates: [103.8198, 1.3521] },
+//   { name: "San Francisco", coordinates: [-122.4194, 37.7749] },
+//   { name: "Sydney", coordinates: [151.2093, -33.8688] },
+//   { name: "Buenos Aires", coordinates: [-58.3816, -34.6037] },
+//   { name: "Shanghai", coordinates: [121.4737, 31.2304] },
+//   { name: "Houston, Texas", coordinates: [-95.369803, 29.760427] },
+//   { name: "Anchorage, Alaska", coordinates: [-149.900278, 61.218056] },
+// ];
 
 const popScale = scaleLinear()
   .domain([0, 100000000, 1400000000])
@@ -35,25 +38,16 @@ class AnimatedMap extends Component {
     this.state = {
       center: [0, 20],
       zoom: 1,
-      cities: [
-        { name: "Zurich", coordinates: [8.5417, 47.3769] },
-        { name: "Singapore", coordinates: [103.8198, 1.3521] },
-        { name: "San Francisco", coordinates: [-122.4194, 37.7749] },
-        { name: "Sydney", coordinates: [151.2093, -33.8688] },
-        { name: "Lagos", coordinates: [3.3792, 6.5244] },
-        { name: "Buenos Aires", coordinates: [-58.3816, -34.6037] },
-        { name: "Shanghai", coordinates: [121.4737, 31.2304] },
-      ],
     };
     this.handleCitySelection = this.handleCitySelection.bind(this);
     this.handleReset = this.handleReset.bind(this);
   }
   handleCitySelection(evt) {
     const cityId = evt.target.getAttribute("data-city");
-    const city = this.state.cities[cityId];
+    const city = cities[cityId];
     this.setState({
       center: city.coordinates,
-      zoom: 4,
+      zoom: 8,
     });
   }
   handleReset() {
@@ -67,7 +61,7 @@ class AnimatedMap extends Component {
       <div>
         <div style={wrapperStyles}>
           {
-            this.state.cities.map((city, i) => (
+            cities.map((city, i) => (
               <button
                 key={i}
                 className="btn px1"

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cities.json": "^1.1.2",
     "d3-geo": "^1.9.1",
     "d3-scale": "^2.0.0",
     "material-ui": "^0.20.0",

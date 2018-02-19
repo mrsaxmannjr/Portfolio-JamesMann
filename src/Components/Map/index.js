@@ -18,16 +18,6 @@ const wrapperStyles = {
   margin: "0 auto",
 };
 
-// const cities = [
-//   { name: "Singapore", coordinates: [103.8198, 1.3521] },
-//   { name: "San Francisco", coordinates: [-122.4194, 37.7749] },
-//   { name: "Sydney", coordinates: [151.2093, -33.8688] },
-//   { name: "Buenos Aires", coordinates: [-58.3816, -34.6037] },
-//   { name: "Shanghai", coordinates: [121.4737, 31.2304] },
-//   { name: "Houston, Texas", coordinates: [-95.369803, 29.760427] },
-//   { name: "Anchorage, Alaska", coordinates: [-149.900278, 61.218056] },
-// ];
-
 const popScale = scaleLinear()
   .domain([0, 100000000, 1400000000])
   .range(["#CFD8DC", "#607D8B", "#37474F"]);
@@ -38,24 +28,41 @@ class AnimatedMap extends Component {
     this.state = {
       center: [0, 20],
       zoom: 1,
+      textVisibility: "hidden",
+      markerVisibility: "visible",
     };
     this.handleCitySelection = this.handleCitySelection.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.toggleHidden = this.toggleHidden.bind(this);
+  }
+
+  toggleHidden(item) {
+    this.setState({
+      textVisibility: "visible",
+    });
   }
   handleCitySelection(evt) {
     const cityId = evt.target.getAttribute("data-city");
     const city = cities[cityId];
+    const cityName = document.getElementById(`${evt.target.textContent}`);
+    console.log(cityName);
+    this.toggleHidden(cityName);
     this.setState({
       center: city.coordinates,
-      zoom: 8,
+      zoom: 15,
+      // markerVisibility: "hidden",
     });
   }
+
   handleReset() {
     this.setState({
       center: [0, 20],
       zoom: 1,
+      textVisibility: "hidden",
+      markerVisibility: "visible",
     });
   }
+
   render() {
     return (
       <div>
@@ -80,12 +87,12 @@ class AnimatedMap extends Component {
           defaultStyle={{
             zoom: 1,
             x: 0,
-            y: 20,
+            y: 15,
           }}
           style={{
-            zoom: spring(this.state.zoom, { stiffness: 210, damping: 20 }),
-            x: spring(this.state.center[0], { stiffness: 210, damping: 20 }),
-            y: spring(this.state.center[1], { stiffness: 210, damping: 20 }),
+            zoom: spring(this.state.zoom, { stiffness: 410, damping: 100 }),
+            x: spring(this.state.center[0], { stiffness: 410, damping: 100 }),
+            y: spring(this.state.center[1], { stiffness: 410, damping: 100 }),
           }}
         >
           {({ zoom, x, y }) => (
@@ -110,19 +117,19 @@ class AnimatedMap extends Component {
                           default: {
                             fill: popScale(geography.properties.pop_est),
                             stroke: "#b71c1c",
-                            strokeWidth: 0.75,
+                            strokeWidth: 0.25,
                             outline: "none",
                           },
                           hover: {
                             fill: "#F4DB5D",
                             stroke: "#b71c1c",
-                            strokeWidth: 0.75,
+                            strokeWidth: 0.25,
                             outline: "none",
                           },
                           pressed: {
                             fill: "#b71c1c",
                             stroke: "#F4DB5D",
-                            strokeWidth: 0.75,
+                            strokeWidth: 0.25,
                             outline: "none",
                           },
                         }}
@@ -134,15 +141,45 @@ class AnimatedMap extends Component {
                     <Marker
                       key={i}
                       marker={city}
-                      onClick={this.handleCityClick}
+                      style={{
+                        default: { stroke: "#b71c1c" },
+                        hover: { stroke: "#FF5722" },
+                        pressed: { stroke: "#FF5722" },
+                      }}
                     >
-                      <circle
-                        cx={0}
-                        cy={0}
-                        r={6}
-                        fill="#F4DB5D"
-                        stroke="#b71c1c"
-                      />
+                      <text
+                        id={city.name}
+                        visibility={this.state.textVisibility}
+                        textAnchor="middle"
+                        y="-35"
+                        style={{
+                          fill: "#fff",
+                          stroke: "#fff",
+                          fontSize: "35px",
+                        }}
+                      >
+                        {city.name}
+                      </text>
+                      <g transform="translate(-12, -24)" visibility={this.state.markerVisibility} >
+                        <path
+                          fill="#F4DB5D"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeMiterlimit="10"
+                          strokeLinejoin="miter"
+                          d="M20,9c0,4.9-8,13-8,13S4,13.9,4,9c0-5.1,4.1-8,8-8S20,3.9,20,9z"
+                        />
+                        <circle
+                          fill="none"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeMiterlimit="10"
+                          strokeLinejoin="miter"
+                          cx="12"
+                          cy="9"
+                          r="3"
+                        />
+                      </g>
                     </Marker>
                   ))}
                 </Markers>

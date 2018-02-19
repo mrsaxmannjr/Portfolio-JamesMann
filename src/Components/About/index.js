@@ -22,7 +22,7 @@ const About = () => (
       <p>I have been playing music professionally for 15 years and for the last 11 years I have been traveling the world as a Music Director/Manager/Musician (Saxophones, Flute, Clarinet).</p>
       <p> Working on a cruise ships, I have worked and lived with people from up to 60 different countries, backgrounds and native languages. This can be very challenging in all aspects of daily life whether it be during work hours or during time off work. I believe the ability to communicate effectively and work together regardless of where a person is from and the language they speak is an invaluable skill that I have developed. This applies when working with customers and coworkers as well as in the creation of apps, websites etc. that appeal to a specific demographic or a larger worldview.</p>
       <p>I studied at the University of Colorado, Boulder and received Bachelor's degrees in Music Performance (Saxophone, Jazz studies) and Music Education. I am a lifelong student of the martial arts and have studied Judo, Wrestling, Arnis/Eskrima, Shaolin Kung-Fu and most recently, Systema. I am a snowboarder, fitness enthusiast and gamer.</p>
-      <h1>WHERE IN THE WORLD</h1>
+      <h2>WHERE IN THE WORLD</h2>
       <p>Here you can browse all the places I visited during my 11 years of travel!</p>
       <AnimatedMap />
     </div>
@@ -49,7 +49,7 @@ span {
   right: 442px;
 }
 
-h1 {
+h1, h2 {
   font-size: 38px;
   margin-bottom: 30px;
   font-weight: 900;

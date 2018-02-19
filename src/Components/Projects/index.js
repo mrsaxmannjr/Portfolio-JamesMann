@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
+import readLogo from "./read.jpg";
+import dbfzpic from "./dbfz.jpg";
 
 const Projects = () => (
   <TheProjects>
@@ -14,39 +17,50 @@ const Projects = () => (
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
         <div id="projects-grid">
-          <a href="https://github.com/Readativity/Frontend" target="_blank">
-            <div className="project-icon" id="readativity">
-              <img className="project-img" src="./assets/readativity.png" alt="Readativity" />
+          <Link to="https://readativity-app.herokuapp.com/" target="_blank">
+            <div className="project-icon" >
+              <img className="project-img" src={readLogo} alt="Readativity" />
               <div className="overlay">
-                <h3>Readativity</h3>
+                <h2>Readativity</h2>
+                <p>
+                Readativity is where reading meets productivity! This app encourages you to read more while making the most of your time. You can keep track of how long you read everyday and check how much you read over the week.
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link to="https://dbfzguide.com/" target="_blank">
+            <div className="project-icon" >
+              <img className="project-img" src={dbfzpic} alt="Readativity" />
+              <div className="overlay">
+                <h2>DBFZ Guide</h2>
+                <p>
+                A companion app for the videogame Dragon Ball FighterZ. Welcome to the one-stop-shop for all your Dragon Ball FighterZ needs! Here you can find details on how to play, the different control schemes, character stats and move-sets, create a custom team and more!
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link to="https://github.com/Readativity/Frontend" target="_blank">
+            <div className="project-icon" >
+              <img className="project-img" src={readLogo} alt="Readativity" />
+              <div className="overlay">
+                <h2>Readativity</h2>
                 <p>
                   A mobile-friendly reading productivity app
                 </p>
               </div>
             </div>
-          </a>
-          <a href="https://github.com/CarolynSM/LetMeKnow_Frontend" target="_blank">
-            <div className="project-icon" id="let-me-know">
-              <img className="project-img" src="./assets/let-me-know.png" alt="Let Me Know" />
+          </Link>
+          <Link to="https://github.com/Readativity/Frontend" target="_blank">
+            <div className="project-icon" >
+              <img className="project-img" src={readLogo} alt="Readativity" />
               <div className="overlay">
-                <h3>Let Me Know</h3>
+                <h2>Readativity</h2>
                 <p>
-                  A mobile-first guestlist management app for hosts &amp; guests
+                  A mobile-friendly reading productivity app
                 </p>
               </div>
             </div>
-          </a>
-          <a href="https://github.com/CarolynSM/best-wine-friends-frontend" target="_blank">
-            <div className="project-icon" id="best-wine-friends">
-              <img className="project-img" src="./assets/best-wine-friends.png" alt="Best Wine Friends" />
-              <div className="overlay">
-                <h3>Best Wine Friends</h3>
-                <p>
-                  A fun, simple, mobile-friendly wine pairing app
-                </p>
-              </div>
-            </div>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
@@ -88,14 +102,18 @@ h1{
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   z-index: 0;
 }
 
 #projects h2 {
   font-size: 1.7em;
+  font-weight: 900;
   padding: 2rem;
   text-transform: uppercase;
+  -webkit-letter-spacing: 5px;
+    -moz-letter-spacing: 5px;
+    -ms-letter-spacing: 5px;
+    letter-spacing: 5px;
 }
 
 #projects-grid {
@@ -105,21 +123,20 @@ h1{
 }
 
 .project-icon {
-  margin: 2rem;
+  margin: 1rem;
   position: relative;
-  /* z-index: -2; */
 }
 
 .project-img {
   display: block;
-  height: 30vh;
-  width: 20vw;
+  height: 320px;
+  width: 320px;
 }
 
 .overlay {
   align-items: center;
-  background-color: rgba(247, 217, 208, 0.9);
-  color: var(--dark-blue);
+  background-color: rgba(244, 219, 93, 1);
+  color: black;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -130,18 +147,14 @@ h1{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: .7s ease;
 }
 
 .project-icon:hover .overlay {
   opacity: 1;
 }
 
-.overlay h3 {
-  font-size: 1.3em;
-  padding: 5rem 0 1rem 0;
-  text-transform: uppercase;
-}
+
 
 .overlay p {
   font-size: 1rem;

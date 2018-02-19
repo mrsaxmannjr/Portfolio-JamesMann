@@ -27,9 +27,24 @@ class Header extends Component {
   }
   render() {
     return (
-      <TheHeader style={{ background: (this.state.background) }}>
+      <TheHeader>
         <Link id="logo" to="/">
           <img src={logo} />
+          <span id="row" >ANN</span>
+          <div id="column">
+            <span >
+            A
+            </span>
+            <span>
+            M
+            </span>
+            <span>
+            E
+            </span>
+            <span>
+            S
+            </span>
+          </div>
         </Link>
         <nav>
           <ul>
@@ -73,6 +88,123 @@ flex-wrap: wrap;
 top: 0;
 width: 100%;
 position: fixed;
+:hover {
+  #column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -3px;
+  margin-top: -10px;
+  width: 48px;
+  line-height: 25px;
+  font-size: 22px;
+  color: #fff;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+  }
+  #row {
+    font-size: 22px;
+    position: fixed;
+    top: 12.5px;
+    left: 47px;
+    color: #fff;
+    animation: fadein2 1s;
+    -moz-animation: fadein2 1s; /* Firefox */
+    -webkit-animation: fadein2 1s; /* Safari and Chrome */
+    -o-animation: fadein2 1s; /* Opera */
+  }
+}
+#column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -3px;
+  margin-top: -10px;
+  width: 48px;
+  line-height: 25px;
+  font-size: 22px;
+  color: #fff;
+  animation: fadeout 1s;
+  -moz-animation: fadeout 1s; /* Firefox */
+  -webkit-animation: fadeout 1s; /* Safari and Chrome */
+  -o-animation: fadeout 1s; /* Opera */
+  display: none;
+}
+
+@keyframes fadeout {
+  0% { opacity:1; }
+  70% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeout { /* Firefox */
+  0% { opacity:1; }
+  70% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+  0% { opacity:1; }
+  70% { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes fadeout { /* Opera */
+  0% { opacity:1; }
+  70% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@keyframes fadein {
+  0% { opacity:0; }
+  30% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+  0% { opacity:0; }
+  30% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  0% { opacity:0; }
+  30% { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes fadein { /* Opera */
+  0% { opacity:0; }
+  30% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+#row {
+  font-size: 22px;
+  position: fixed;
+  top: 12.5px;
+  left: 47px;
+  color: rgba(244, 219, 93, 0);
+}
+
+@keyframes fadein2 {
+0% { opacity:0; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+@-moz-keyframes fadein2 { /* Firefox */
+  0% { opacity:0; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+@-webkit-keyframes fadein2 { /* Safari and Chrome */
+  0% { opacity:0; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+@-o-keyframes fadein2 { /* Opera */
+  0% { opacity:0; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
 
 #logo {
   text-decoration: none;

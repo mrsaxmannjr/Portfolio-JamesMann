@@ -12,6 +12,7 @@ const Contact = () => (
     </span>
     <div>
       <h1>CONTACT</h1>
+      <p>Don't be a stranger, go ahead and drop me a message, I'd love to hear from you!</p>
       <form method="post" encType="text/plain">
         <input type="text" name="name" placeholder="Your name" required="" />
         <input type="email" name="email" placeholder="Your email" required="" />
@@ -31,15 +32,18 @@ export default Contact;
 const TheContact = styled.div`
 max-width: 960px;
 margin: 45px auto;
+margin-top: 0px;
+margin-bottom: 0px;
 min-height: 70vh;
 padding: 80px 5% 0px;
+padding-top: 130px;
 
 img {
   height: 127px;
 }
 
 span {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 14px;
 }
@@ -77,6 +81,7 @@ form {
 
   button {
     margin: 10px;
+    margin-bottom: 6px;
     height: 30px;
     width: 150px;
     border-radius: 2%;

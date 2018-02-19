@@ -1,35 +1,59 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
-const Header = () => (
-  <TheHeader>
-    <Link id="logo" to="/">
-      <img src={logo} />
-    </Link>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/about">ABOUT</Link>
-        </li>
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      background: "rgba(17, 17, 17,0)",
+    };
+    this.addColor = this.addColor.bind(this);
+  }
 
-        <li>
-          <Link to="/resume">RESUME</Link>
-        </li>
 
-        <li>
-          <Link to="/projects">PROJECTS</Link>
-        </li>
+  addColor() {
+    this.setState({
+      background: "rgba(17, 17, 17,0)",
+    });
+  }
 
-        <li>
-          <Link to="/contact">CONTACT</Link>
-        </li>
-      </ul>
-    </nav>
-  </TheHeader>
-);
+  removeColor() {
+    this.setState({
+      background: "rgba(17, 17, 17,0)",
+    });
+  }
+  render() {
+    return (
+      <TheHeader style={{ background: (this.state.background) }}>
+        <Link id="logo" to="/">
+          <img src={logo} />
+        </Link>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/about" onClick={this.addColor} >ABOUT</Link>
+            </li>
+
+            <li>
+              <Link to="/resume" onClick={this.addColor}>RESUME</Link>
+            </li>
+
+            <li>
+              <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
+            </li>
+
+            <li>
+              <Link to="/contact" onClick={this.addColor}>CONTACT</Link>
+            </li>
+          </ul>
+        </nav>
+      </TheHeader>
+    );
+  }
+}
 
 export default Header;
 
@@ -48,6 +72,7 @@ position: fixed;
 flex-wrap: wrap;
 top: 0;
 width: 100%;
+position: fixed;
 
 #logo {
   text-decoration: none;

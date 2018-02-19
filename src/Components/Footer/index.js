@@ -29,8 +29,8 @@ const Footer = () => (
 export default Footer;
 
 const FooterNav = styled.footer`
-marigin-top: auto;
-margin-bottom: 1rem;
+padding-top: 40px;
+padding-bottom: 25px;
 
 img {
   height: 60px;

@@ -24,15 +24,17 @@ export default Resume;
 const TheResume = styled.div`
 max-width: 960px;
 margin: 45px auto;
+margin-top: 0px;
 min-height: 70vh;
 padding: 80px 5% 0px;
+padding-top: 130px;
 
 img {
   height: 127px;
 }
 
 span {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 314px;
 }

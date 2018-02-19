@@ -36,5 +36,4 @@ const GridDiv = styled.div`
 Header, Main, Footer {
   z-index: 1;
 }
-
 `;

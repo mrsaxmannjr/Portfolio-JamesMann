@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
-import readLogo from "./read.jpg";
-import dbfzpic from "./dbfz.jpg";
+import read from "./readimg.jpg";
+import dbfz from "./dbfzimg.jpg";
+import dojo from "./dojoimg.jpg";
+import whear from "./whearimg.jpg";
 
 const Projects = () => (
   <TheProjects>
@@ -19,45 +21,73 @@ const Projects = () => (
         <div id="projects-grid">
           <Link to="https://readativity-app.herokuapp.com/" target="_blank">
             <div className="project-icon" >
-              <img className="project-img" src={readLogo} alt="Readativity" />
+              <img className="project-img" src={read} alt="Readativity" />
               <div className="overlay">
                 <h2>Readativity</h2>
                 <p>
-                Readativity is where reading meets productivity! This app encourages you to read more while making the most of your time. You can keep track of how long you read everyday and check how much you read over the week.
+                Readativity is where reading meets productivity!
                 </p>
+                <p>
+                This app encourages you to read more while making the most of your time. You can keep track of how long you read everyday and check how much you read over the week.
+                </p>
+                <div className="tech">
+                  <h3>Technologies</h3>
+                  <p>React.js, Chart.js, HTML5, CSS3, JavaScript(ES6), Node.js, PostgreSQL, Knex.js, Express.js, Heroku, Cypress, Google News API, Git/Github, Agile Workflow, Pair Programming</p>
+                </div>
               </div>
             </div>
           </Link>
           <Link to="https://dbfzguide.com/" target="_blank">
             <div className="project-icon" >
-              <img className="project-img" src={dbfzpic} alt="Readativity" />
+              <img className="project-img" src={dbfz} alt="Readativity" />
               <div className="overlay">
                 <h2>DBFZ Guide</h2>
                 <p>
-                A companion app for the videogame Dragon Ball FighterZ. Welcome to the one-stop-shop for all your Dragon Ball FighterZ needs! Here you can find details on how to play, the different control schemes, character stats and move-sets, create a custom team and more!
+                A companion app for the videogame Dragon Ball FighterZ!
                 </p>
+                <p>
+                Welcome to the one-stop-shop for all your Dragon Ball FighterZ needs! Here you can find details on how to play, the different control schemes, character stats and move-sets, create a custom team and more!
+                </p>
+                <div className="tech">
+                  <h3>Technologies</h3>
+                  <p>HTML5, CSS3, JavaScript(ES6), Node.js, Express.js, Firebase, D3.js, Materialize CSS, Mocha/Chai/Assert, Git/Github</p>
+                </div>
               </div>
             </div>
           </Link>
-          <Link to="https://github.com/Readativity/Frontend" target="_blank">
+          <Link to="https://tower-fe.herokuapp.com/" target="_blank">
             <div className="project-icon" >
-              <img className="project-img" src={readLogo} alt="Readativity" />
+              <img className="project-img" src={dojo} alt="Readativity" />
               <div className="overlay">
-                <h2>Readativity</h2>
+                <h2>Dojo Sense</h2>
                 <p>
-                  A mobile-friendly reading productivity app
+                  Use Dojo Sense to browse different Martial Art styles, see an overview video, read a description and find dojos(schools) that teach the selected art.  The school location will be plotted on Google maps.
                 </p>
+                <p>
+                  Dojo Sense is backed by a custom built API with full CRUD functionality.
+                </p>
+                <div className="tech">
+                  <h3>Technologies</h3>
+                  <p>React.js, HTML5, CSS3, JavaScript(ES6), Node.js, PostgreSQL, Knex.js, Express.js, Heroku, google-map-react, Cypress, Git/Github</p>
+                </div>
               </div>
             </div>
           </Link>
-          <Link to="https://github.com/Readativity/Frontend" target="_blank">
+          <Link to="https://whear-a7bc7.firebaseapp.com/" target="_blank">
             <div className="project-icon" >
-              <img className="project-img" src={readLogo} alt="Readativity" />
+              <img className="project-img" src={whear} alt="Readativity" />
               <div className="overlay">
-                <h2>Readativity</h2>
+                <h2>Whear.com</h2>
                 <p>
-                  A mobile-friendly reading productivity app
+                Whear.com suggests outfits for men based on specific event types while dynamically populating all items.
                 </p>
+                <p>
+                The winning app for the Dec. 2017 g70 Hackathon based on the theme "Where.com".  Built by a 4 person team with a 5 hour time constraint.
+                </p>
+                <div className="tech">
+                  <h3>Technologies</h3>
+                  <p>HTML5, CSS3, Materialize CSS, Heroku, Firebase, Express.js, Adobe Photoshop, Git/Github</p>
+                </div>
               </div>
             </div>
           </Link>
@@ -87,7 +117,7 @@ span {
   right: 168px;
 }
 
-h1{
+h1 {
     font-size: 38px;
     margin-bottom: 30px;
     font-weight: 900;
@@ -96,6 +126,24 @@ h1{
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
     text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+  -webkit-letter-spacing: 5px;
+  -moz-letter-spacing: 5px;
+  -ms-letter-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 900;
+  padding: .5rem;
+  padding-top: .25rem;
+  padding-bottom: 0px;
+  margin-bottom: -5px;
+  color: #fff;
 }
 
 #projects {
@@ -107,13 +155,16 @@ h1{
 
 #projects h2 {
   font-size: 1.7em;
+  text-decoration: underline;
   font-weight: 900;
-  padding: 2rem;
+  padding: .5rem;
+  padding-bottom: 0rem;
   text-transform: uppercase;
   -webkit-letter-spacing: 5px;
     -moz-letter-spacing: 5px;
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
+    color: #fff;
 }
 
 #projects-grid {
@@ -123,19 +174,19 @@ h1{
 }
 
 .project-icon {
-  margin: 1rem;
+  margin: 0rem;
   position: relative;
 }
 
 .project-img {
   display: block;
-  height: 320px;
-  width: 320px;
+  height: 355px;
+  width: 355px;
+  border: solid rgba(244, 219, 93, 1);
 }
 
 .overlay {
   align-items: center;
-  background-color: rgba(244, 219, 93, 1);
   color: black;
   display: flex;
   flex-direction: column;
@@ -147,19 +198,34 @@ h1{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .7s ease;
+  transition: .5s ease;
+  background-color: #F4DB5D;
+
 }
 
 .project-icon:hover .overlay {
   opacity: 1;
 }
 
-
-
 .overlay p {
   font-size: 1rem;
   line-height: 1.2em;
-  padding: 0 1rem;
+  padding: 0 .35rem;
+  margin-bottom: .55rem;
   text-align: center;
+}
 
+.tech p {
+  font-style: italic;
+  font-size: 17px;
+}
+
+#projects-grid > a:nth-child(2) > div > img {
+  border-left: none;
+  border-right: none;
+}
+
+#projects-grid > a:nth-child(3) > div > img {
+  border-right: none;
+}
 `;

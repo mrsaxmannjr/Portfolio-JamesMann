@@ -28,29 +28,23 @@ class AnimatedMap extends Component {
     this.state = {
       center: [0, 20],
       zoom: 1,
-      textVisibility: "hidden",
       markerVisibility: "visible",
     };
     this.handleCitySelection = this.handleCitySelection.bind(this);
     this.handleReset = this.handleReset.bind(this);
-    this.toggleHidden = this.toggleHidden.bind(this);
   }
 
-  toggleHidden(item) {
-    this.setState({
-      textVisibility: "visible",
-    });
-  }
   handleCitySelection(evt) {
     const cityId = evt.target.getAttribute("data-city");
+    const cityCoords = evt.target.getAttribute("coords");
     const city = cities[cityId];
-    const cityName = document.getElementById(`${evt.target.textContent}`);
-    console.log(cityName);
-    this.toggleHidden(cityName);
+    const shit = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
+    console.log(shit);
+
     this.setState({
-      center: city.coordinates,
-      zoom: 15,
-      // markerVisibility: "hidden",
+      center: shit,
+      zoom: 10,
+      markerVisibility: "hidden",
     });
   }
 
@@ -58,7 +52,6 @@ class AnimatedMap extends Component {
     this.setState({
       center: [0, 20],
       zoom: 1,
-      textVisibility: "hidden",
       markerVisibility: "visible",
     });
   }
@@ -67,18 +60,20 @@ class AnimatedMap extends Component {
     return (
       <div>
         <div style={wrapperStyles}>
-          {
-            cities.map((city, i) => (
-              <button
-                key={i}
-                className="btn px1"
-                data-city={i}
-                onClick={this.handleCitySelection}
-              >
-                { city.name }
-              </button>
-            ))
-          }
+          <select onChange={this.handleCitySelection} >
+            {
+              cities.map((city, i) => (
+                <option
+                  key={i}
+                  className="btn px1"
+                  data-city={i}
+                  value={JSON.stringify(city.coordinates)}
+                >
+                  { city.name }
+                </option>
+              ))
+            }
+          </select>
           <button onClick={this.handleReset}>
             { "Reset" }
           </button>
@@ -149,7 +144,7 @@ class AnimatedMap extends Component {
                     >
                       <text
                         id={city.name}
-                        visibility={this.state.textVisibility}
+                        visibility={city.coordinates.toString() === this.state.center.toString() ? "visible" : "hidden"}
                         textAnchor="middle"
                         y="-35"
                         style={{
@@ -160,7 +155,7 @@ class AnimatedMap extends Component {
                       >
                         {city.name}
                       </text>
-                      <g transform="translate(-12, -24)" visibility={this.state.markerVisibility} >
+                      <g transform="translate(-12, -24)" visibility={city.coordinates.toString() === this.state.center.toString() ? "visible" : "hidden"} >
                         <path
                           fill="#F4DB5D"
                           strokeWidth="2"

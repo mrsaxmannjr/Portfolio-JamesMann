@@ -7,7 +7,7 @@ import talent from "./galvanize.png";
 
 const Footer = () => (
   <FooterNav>
-    <h3 id="find-me">Come at me</h3>
+    <h3 id="find-me">FIND OUT MORE</h3>
     <nav>
       <ul id="links">
         <li >

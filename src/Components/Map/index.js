@@ -28,23 +28,29 @@ class AnimatedMap extends Component {
     this.state = {
       center: [0, 20],
       zoom: 1,
-      markerVisibility: "visible",
+      visibility: "visible",
     };
     this.handleCitySelection = this.handleCitySelection.bind(this);
     this.handleReset = this.handleReset.bind(this);
   }
 
   handleCitySelection(evt) {
-    const cityId = evt.target.getAttribute("data-city");
-    const cityCoords = evt.target.getAttribute("coords");
-    const city = cities[cityId];
-    const shit = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
-    console.log(shit);
+    const location = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
+    console.log(location);
 
     this.setState({
-      center: shit,
+      center: location,
       zoom: 10,
-      markerVisibility: "hidden",
+      visibility: "hidden",
+    });
+  }
+
+  handleMarkerVisibility(evt) {
+    const location = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
+    console.log(location);
+
+    this.setState({
+      visibility: "visible",
     });
   }
 
@@ -52,7 +58,7 @@ class AnimatedMap extends Component {
     this.setState({
       center: [0, 20],
       zoom: 1,
-      markerVisibility: "visible",
+      visibility: "visible",
     });
   }
 
@@ -155,7 +161,10 @@ class AnimatedMap extends Component {
                       >
                         {city.name}
                       </text>
-                      <g transform="translate(-12, -24)" visibility={city.coordinates.toString() === this.state.center.toString() ? "visible" : "hidden"} >
+                      <g
+                        transform="translate(-12, -24)"
+                        visibility={city.coordinates.toString() === this.state.center.toString() ? "#b71c1c" : this.state.visibility}
+                      >
                         <path
                           fill="#F4DB5D"
                           strokeWidth="2"

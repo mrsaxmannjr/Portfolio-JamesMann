@@ -4,10 +4,11 @@ import styled from "styled-components";
 import github from "./github-sign.svg";
 import linkedIn from "./linkedin.svg";
 import talent from "./galvanize.png";
+import marker from "./marker.svg";
 
 const Footer = () => (
   <FooterNav>
-    <h3 id="find-me">FIND OUT MORE</h3>
+    <h3 id="find-me"><img id="marker" src={marker} />Denver, CO</h3>
     <nav>
       <ul id="links">
         <li >
@@ -23,18 +24,24 @@ const Footer = () => (
         </li>
       </ul>
     </nav>
+    <small>&copy; 2018 James Mann</small>
   </FooterNav>
 );
 
 export default Footer;
 
 const FooterNav = styled.footer`
-padding-top: 40px;
-padding-bottom: 25px;
+margin-bottom: 10px;
+
+#marker {
+  height: 25px;
+  position: relative;
+  right: 8px;
+  top: 7px;
+}
 
 img {
-  height: 60px;
-
+  height: 45px;
 }
 
 #find-me {
@@ -45,7 +52,9 @@ img {
   -ms-letter-spacing: 5px;
   letter-spacing: 5px;
   text-align: center;
-  font-size: 1.17em;
+  font-size: 16px;
+  margin-bottom: 15px;
+
 }
 text-align: center;
 
@@ -59,6 +68,7 @@ text-align: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 li{
@@ -68,4 +78,9 @@ li{
       text-decoration: none;
       color: inherit;
     }
+
+small {
+  // padding-top: 25px;
+  font-size: 12px;
+}
 `;

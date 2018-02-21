@@ -176,7 +176,6 @@ position: fixed;
   100% { opacity:1; }
 }
 
-
 #row {
   font-size: 22px;
   position: fixed;

@@ -15,7 +15,7 @@ const Projects = () => (
         <img src={logo} />
       </Overdrive>
     </span>
-    <div>
+    <div id="push-footer">
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
         <div id="projects-grid">
@@ -227,5 +227,9 @@ h3 {
 
 #projects-grid > a:nth-child(3) > div > img {
   border-right: none;
+}
+
+#push-footer {
+  margin-bottom: 98px;
 }
 `;

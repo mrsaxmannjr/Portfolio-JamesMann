@@ -61,6 +61,7 @@ form {
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 50px;
 
   input {
     width: 425px;

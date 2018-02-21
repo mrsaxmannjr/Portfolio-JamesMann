@@ -26,7 +26,7 @@ margin-top: 0px;
 min-height: 70vh;
 padding: 80px 5% 0px;
 padding-top: 130px;
-
+padding-bottom: 50px;
 
 img {
   height: 250px;
@@ -37,12 +37,10 @@ img {
   font-size: 64px;
   font-weight: 300;
   line-height: 1.2;
-}
- #intro {
-    animation: fadein 6s;
-    -moz-animation: fadein 6s; /* Firefox */
-    -webkit-animation: fadein 6s; /* Safari and Chrome */
-    -o-animation: fadein 6s; /* Opera */
+  animation: fadein 6s;
+  -moz-animation: fadein 6s; /* Firefox */
+  -webkit-animation: fadein 6s; /* Safari and Chrome */
+  -o-animation: fadein 6s; /* Opera */
  }
 
 @keyframes fadein {

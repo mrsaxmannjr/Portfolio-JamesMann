@@ -8,19 +8,19 @@ import marker from "./marker.svg";
 
 const Footer = () => (
   <FooterNav>
-    <h3 id="find-me"><img id="marker" src={marker} />Denver, CO</h3>
+    <h3 id="find-me"><img id="marker" src={marker} alt="Location Marker" />Denver, CO</h3>
     <nav>
       <ul id="links">
         <li >
-          <Link to="https://github.com/mrsaxmannjr" target="_blank"><img src={github} /> </Link>
+          <Link to="https://github.com/mrsaxmannjr" target="_blank"><img src={github} alt="Github Icon" /> </Link>
         </li>
 
         <li >
-          <Link to="https://www.linkedin.com/in/mrsaxmannjr/" target="_blank"><img src={linkedIn} /></Link>
+          <Link to="https://www.linkedin.com/in/mrsaxmannjr/" target="_blank"><img src={linkedIn} alt="LinkedIn Icon" /></Link>
         </li>
 
         <li >
-          <Link to="https://talent.galvanize.com/students/2067" target="_blank"><img src={talent} /></Link>
+          <Link to="https://talent.galvanize.com/students/2067" target="_blank"><img src={talent}alt="Galvanize Talent Icon" /></Link>
         </li>
       </ul>
     </nav>
@@ -54,9 +54,7 @@ img {
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
-
 }
-text-align: center;
 
 #links {
   display: -webkit-box;
@@ -71,6 +69,9 @@ text-align: center;
   margin-bottom: 5px;
 }
 
+// Copyright
+text-align: center;
+
 li{
   padding: 0 20px 0 20px;
 }
@@ -79,8 +80,10 @@ li{
       color: inherit;
     }
 
+// Copyright
+text-align: center;
+
 small {
-  // padding-top: 25px;
   font-size: 12px;
 }
 `;

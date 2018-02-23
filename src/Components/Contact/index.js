@@ -5,18 +5,23 @@ import logo from "./js.png";
 
 const Contact = () => (
   <TheContact>
+    <div id="header-background">
+      <p id="placeholder">placeholder</p>
+    </div>
     <span>
+      {/* Logo animation */}
       <Overdrive id="img" duration="700">
-        <img src={logo} />
+        <img src={logo} alt="JM Logo" />
       </Overdrive>
     </span>
     <div>
       <h1>CONTACT</h1>
-      <p>Don't be a stranger, go ahead and drop me a message, I'd love to hear from you!</p>
+      <p>Don&#39;t be a stranger, go ahead and drop me a message, I&#39;d love to hear from you!</p>
+      {/* Contact Form */}
       <form method="post" encType="text/plain">
-        <input type="text" name="name" placeholder="Your name" required="" />
-        <input type="email" name="email" placeholder="Your email" required="" />
-        <textarea rows="5" name="message" placeholder="Your message" required="" />
+        <input type="text" name="name" placeholder="Your name" />
+        <input type="email" name="email" placeholder="Your email" />
+        <textarea rows="5" name="message" placeholder="Your message" />
         <button type="submit" id="submit">Send</button>
       </form>
     </div>
@@ -67,13 +72,13 @@ form {
     width: 425px;
     height: 50px;
     margin: 10px;
-    font-size:24px;
+    font-size: 24px;
   }
 
   textarea {
     width: 425px;
     margin: 10px;
-    font-size:24px;
+    font-size: 24px;
   }
 
   button {
@@ -84,5 +89,28 @@ form {
     border-radius: 2%;
     font-size:20px;
   }
+}
+
+#header-background {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  height: 127px;
+  position: fixed;
+  background: #111;
+}
+
+#placeholder {
+  visibility: hidden;
 }
 `;

@@ -5,6 +5,9 @@ import logo from "./js.png";
 
 const Resume = () => (
   <TheResume>
+    <div id="header-background">
+      <p id="placeholder">placeholder</p>
+    </div>
     <span>
       <Overdrive id="img" duration="700">
         <img src={logo} />
@@ -48,5 +51,28 @@ h1{
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
     text-align: center;
+}
+
+#header-background {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  height: 127px;
+  position: fixed;
+  background: #111;
+}
+
+#placeholder {
+  visibility: hidden;
 }
 `;

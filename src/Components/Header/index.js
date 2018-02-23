@@ -1,73 +1,50 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "./js.png";
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      background: "rgba(17, 17, 17,0)",
-    };
-    this.addColor = this.addColor.bind(this);
-  }
-
-  addColor() {
-    this.setState({
-      background: "rgba(17, 17, 17,0)",
-    });
-  }
-
-  removeColor() {
-    this.setState({
-      background: "rgba(17, 17, 17,0)",
-    });
-  }
-
-  render() {
-    return (
-      <TheHeader>
-        <Link id="logo" to="/">
-          <img src={logo} />
-          <span id="row" >ANN</span>
-          <div id="column">
-            <span >
+const Header = () => (
+  <TheHeader>
+    <Link id="logo" to="/">
+      <img src={logo} alt="JM Logo" />
+      <span id="row" >ANN</span>
+      <div id="column">
+        <span >
             A
-            </span>
-            <span>
+        </span>
+        <span>
             M
-            </span>
-            <span>
+        </span>
+        <span>
             E
-            </span>
-            <span>
+        </span>
+        <span>
             S
-            </span>
-          </div>
-        </Link>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/about" onClick={this.addColor} >ABOUT</Link>
-            </li>
+        </span>
+      </div>
+    </Link>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/about" onClick={this.addColor} >ABOUT</Link>
+        </li>
 
-            <li>
-              <Link to="/resume" onClick={this.addColor}>RESUME</Link>
-            </li>
+        <li>
+          <Link to="/resume" onClick={this.addColor}>RESUME</Link>
+        </li>
 
-            <li>
-              <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
-            </li>
+        <li>
+          <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
+        </li>
 
-            <li>
-              <Link to="/contact" onClick={this.addColor}>CONTACT</Link>
-            </li>
-          </ul>
-        </nav>
-      </TheHeader>
-    );
-  }
-}
+        <li>
+          <Link to="/contact" onClick={this.addColor}>CONTACT</Link>
+        </li>
+      </ul>
+    </nav>
+  </TheHeader>
+);
+
 
 export default Header;
 
@@ -95,6 +72,8 @@ position: fixed;
     height: 40px;
   }
 }
+
+//Full name animation: fadeIn on Header hover
   :hover {
     #column {
       display: flex;
@@ -111,6 +90,7 @@ position: fixed;
       -webkit-animation: fadein 1s; /* Safari and Chrome */
       -o-animation: fadein 1s; /* Opera */
     }
+
     #row {
       font-size: 16px;
       position: fixed;
@@ -123,6 +103,8 @@ position: fixed;
       -o-animation: fadein2 1s; /* Opera */
     }
   }
+
+  //Full name display:none Header hover off
   #column {
     display: flex;
     flex-direction: column;
@@ -147,17 +129,20 @@ position: fixed;
     30% { opacity:0; }
     100% { opacity:1; }
 }
+
   @-webkit-keyframes fadein { /* Safari and Chrome */
     0% { opacity:0; }
     30% { opacity:0; }
     100% { opacity:1; }
   }
+
   @-o-keyframes fadein { /* Opera */
     0% { opacity:0; }
     30% { opacity:0; }
     100% { opacity:1; }
   }
 
+  //Full name display:none Header hover off
   #row {
     font-size: 22px;
     position: fixed;
@@ -171,16 +156,19 @@ position: fixed;
     60% { opacity:0; }
     100% { opacity:1; }
   }
+
   @-moz-keyframes fadein2 { /* Firefox */
     0% { opacity:0; }
     50% { opacity:0; }
     100% { opacity:1; }
   }
+
   @-webkit-keyframes fadein2 { /* Safari and Chrome */
     0% { opacity:0; }
     50% { opacity:0; }
     100% { opacity:1; }
   }
+
   @-o-keyframes fadein2 { /* Opera */
     0% { opacity:0; }
     50% { opacity:0; }
@@ -195,13 +183,13 @@ ul {
   margin-left: 1.45rem;
   margin-bottom: 1.45rem;
 
-li {
-  display: inline-block;
-  margin-bottom: calc(1.45rem / 2);
-  margin: 0;
-    img {
+  li {
+    display: inline-block;
+    margin-bottom: calc(1.45rem / 2);
+    margin: 0;
+      img {
       height: 100px;
-    }
+      }
   }
 }
 

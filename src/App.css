@@ -5,6 +5,10 @@
 *:after {
   box-sizing: inherit;
 }
+
+:root {
+  --JS-yellow:#F4DB5D;
+}
 html {
   font: 112.5%/1.45em "Lato", "sans-serif";
   box-sizing: border-box;

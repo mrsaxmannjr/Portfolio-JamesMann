@@ -9,14 +9,9 @@ import {
 } from "react-simple-maps";
 import { Motion, spring } from "react-motion";
 import { scaleLinear } from "d3-scale";
+import styled from "styled-components";
 import map from "./world-110m.json";
 import cities from "./cities-visited.json";
-
-const wrapperStyles = {
-  width: "100%",
-  maxWidth: 980,
-  margin: "0 auto",
-};
 
 const popScale = scaleLinear()
   .domain([0, 100000000, 1400000000])
@@ -64,9 +59,9 @@ class AnimatedMap extends Component {
 
   render() {
     return (
-      <div>
-        <div style={wrapperStyles}>
-          <select onChange={this.handleCitySelection} >
+      <MapDiv>
+        <div id="map-controls" >
+          <select id="select" onChange={this.handleCitySelection} >
             {
               cities.map((city, i) => (
                 <option
@@ -80,8 +75,8 @@ class AnimatedMap extends Component {
               ))
             }
           </select>
-          <button onClick={this.handleReset}>
-            { "Reset" }
+          <button id="reset-button" onClick={this.handleReset}>
+            { "Reset Map" }
           </button>
         </div>
         <Motion
@@ -191,9 +186,44 @@ class AnimatedMap extends Component {
             </ComposableMap>
           )}
         </Motion>
-      </div>
+      </MapDiv>
     );
   }
 }
 
 export default AnimatedMap;
+
+const MapDiv = styled.div`
+#map-controls {
+  display: flex;
+}
+
+#select {
+  width: 100%;
+  border: solid var(--JS-yellow);;
+  height: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  font-size: 20px;
+}
+
+#reset-button {
+  width: 160px;
+  border: solid var(--JS-yellow);
+  margin-left: 5px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  font-size: 20px;
+}
+`;

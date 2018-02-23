@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
-import Modal from "./Modal";
+import ProjectModal1 from "./ProjectModal.1";
+import ProjectModal2 from "./ProjectModal.2";
+import ProjectModal3 from "./ProjectModal.3";
+import ProjectModal4 from "./ProjectModal.4";
 import logo from "./js.png";
 
 const Projects = () => (
@@ -18,7 +21,10 @@ const Projects = () => (
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
         <div id="projects-grid">
-          <Modal />
+          <ProjectModal1 />
+          <ProjectModal2 />
+          <ProjectModal3 />
+          <ProjectModal4 />
         </div>
       </section>
     </div>
@@ -87,12 +93,13 @@ h3 {
   font-weight: 900;
   padding: .5rem;
   padding-bottom: 0rem;
+  padding-top: 140px;
   text-transform: uppercase;
   -webkit-letter-spacing: 5px;
     -moz-letter-spacing: 5px;
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
-    color: var(--white);
+    color: var(--black);
 }
 
 #projects-grid {

@@ -201,7 +201,7 @@ const MapDiv = styled.div`
 
 #select {
   width: 100%;
-  border: solid var(--JS-yellow);;
+  border: solid var(--JS-yellow);
   height: 30px;
   margin-left: 0;
   margin-right: 0;

@@ -73,12 +73,14 @@ form {
     height: 50px;
     margin: 10px;
     font-size: 24px;
+    border: solid var(--JS-yellow);;
   }
 
   textarea {
     width: 425px;
     margin: 10px;
     font-size: 24px;
+    border: solid var(--JS-yellow);;
   }
 
   button {
@@ -88,6 +90,7 @@ form {
     width: 150px;
     border-radius: 2%;
     font-size:20px;
+    border: solid var(--JS-yellow);;
   }
 }
 

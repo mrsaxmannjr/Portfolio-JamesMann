@@ -69,7 +69,7 @@ h1{
   width: 100%;
   height: 127px;
   position: fixed;
-  background: #111;
+  background: var(--black);;
 }
 
 #placeholder {

@@ -84,7 +84,7 @@ position: fixed;
       width: 48px;
       line-height: 20px;
       font-size: 16px;
-      color: #fff;
+      color: var(--white);
       animation: fadein 1s;
       -moz-animation: fadein 1s; /* Firefox */
       -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -96,7 +96,7 @@ position: fixed;
       position: fixed;
       top: 12.5px;
       left: 45px;
-      color: #fff;
+      color: var(--white);;
       animation: fadein2 1s;
       -moz-animation: fadein2 1s; /* Firefox */
       -webkit-animation: fadein2 1s; /* Safari and Chrome */
@@ -114,7 +114,7 @@ position: fixed;
     width: 48px;
     line-height: 25px;
     font-size: 22px;
-    color: #fff;
+    color: var(--white);;
     display: none;
   }
 
@@ -195,7 +195,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   padding: 15px 10px 18px;
   font-weight: 900;
   -webkit-letter-spacing: 5px;

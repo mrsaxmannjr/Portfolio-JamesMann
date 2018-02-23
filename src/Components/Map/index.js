@@ -196,6 +196,7 @@ export default AnimatedMap;
 const MapDiv = styled.div`
 #map-controls {
   display: flex;
+  padding-bottom: 5px;
 }
 
 #select {

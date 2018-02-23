@@ -8,6 +8,9 @@
 
 :root {
   --JS-yellow:#F4DB5D;
+  --white:#fff;
+  --black:#111;
+  --red:#b71c1c;
 }
 html {
   font: 112.5%/1.45em "Lato", "sans-serif";
@@ -20,7 +23,7 @@ html {
 }
 
 body {
-  color: #fff;
+  color: var(--white);
   font-family: "Lato", "sans-serif";
   font-weight: normal;
   word-wrap: break-word;
@@ -29,7 +32,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background: #111;
+  background: var(--black);
   line-height: 1.5;
   height: 100vh;
 }

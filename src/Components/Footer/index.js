@@ -42,6 +42,7 @@ margin-bottom: 10px;
 
 img {
   height: 45px;
+  color: var(--JS-yellow);
 }
 
 #find-me {

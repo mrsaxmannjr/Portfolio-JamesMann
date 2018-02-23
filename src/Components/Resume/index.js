@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
+import resume from "./James Mann - resume.pdf";
 
 const Resume = () => (
   <TheResume>
@@ -15,9 +16,7 @@ const Resume = () => (
     </span>
     <div>
       <h1>RESUME</h1>
-      <p>
-      I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.I am a developer, musician, martial artist and gamer.
-      </p>
+      <embed src={resume} width="800px" height="1070px" />
     </div>
   </TheResume>
 );

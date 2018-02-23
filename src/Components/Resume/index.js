@@ -11,7 +11,7 @@ const Resume = () => (
     </div>
     <span>
       <Overdrive id="img" duration="700">
-        <img src={logo} />
+        <img src={logo} alt="JM Logo" />
       </Overdrive>
     </span>
     <div>

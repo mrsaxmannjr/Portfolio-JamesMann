@@ -17,17 +17,16 @@ const About = () => (
     </span>
     <div>
       <h1>ABOUT</h1>
-      <p>Hi there, I&#39;m James Mann</p>
       <p>
-      I am a Full Stack Web Developer based in Denver, CO. My lifelong training in music gives me a unique, disciplined, creative, collaborative and focused approach to building full stack applications.
+      Hi, I&#39;m James Mann, a Full Stack Web Developer based in Denver, CO. My lifelong training in music gives me a unique, creative, collaborative and focused approach to building web apps.
       </p>
-      <p>I am currently enrolled in the Web Development Immersive program at Galvanize - Denver, Platte Campus.</p>
-      <p>I have been playing music professionally for 15 years and for the last 11 years I have been traveling the world as a Music Director/Manager/Musician (Saxophones, Flute, Clarinet).</p>
+
+      <h2>WHERE IN THE WORLD</h2>
+      <p id="places-visited">Here you can browse all the places I visited during my 11 years of travel!</p>
+      <AnimatedMap />
+      <p>Prior to my transition into the developer world, I had been playing music professionally for 15 years and for the last 11 years I had been traveling the world as a Music Director/Manager/Musician (Saxophones, Flute, Clarinet).</p>
       <p> Working on a cruise ships, I have worked and lived with people from up to 60 different countries, backgrounds and native languages. This can be very challenging in all aspects of daily life whether it be during work hours or during time off work. I believe the ability to communicate effectively and work together regardless of where a person is from and the language they speak is an invaluable skill that I have developed. This applies when working with customers and coworkers as well as in the creation of apps, websites etc. that appeal to a specific demographic or a larger worldview.</p>
       <p>I studied at the University of Colorado, Boulder and received Bachelor&#39;s degrees in Music Performance (Saxophone, Jazz studies) and Music Education. I am a lifelong student of the martial arts and have studied Judo, Wrestling, Arnis/Eskrima, Shaolin Kung-Fu and most recently, Systema. I am a snowboarder, fitness enthusiast and gamer.</p>
-      <h2>WHERE IN THE WORLD</h2>
-      <p>Here you can browse all the places I visited during my 11 years of travel!</p>
-      <AnimatedMap />
     </div>
   </TheAbout>
 );
@@ -51,9 +50,9 @@ span {
     }
 }
 
-h1, h2 {
+h1 {
   font-size: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 900;
   -webkit-letter-spacing: 5px;
   -moz-letter-spacing: 5px;
@@ -61,6 +60,26 @@ h1, h2 {
   letter-spacing: 5px;
   text-align: center;
   }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  -webkit-letter-spacing: 5px;
+  -moz-letter-spacing: 5px;
+  -ms-letter-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#places-visited {
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
 
 #header-background {
   display: -webkit-box;

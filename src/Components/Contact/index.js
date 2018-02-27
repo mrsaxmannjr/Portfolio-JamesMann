@@ -16,11 +16,11 @@ const Contact = () => (
     </span>
     <div>
       <h1>CONTACT</h1>
-      <p>Don&#39;t be a stranger, go ahead and drop me a message, I&#39;d love to hear from you!</p>
+      <p>Don&#39;t be a stranger, go ahead and drop me a message.  I&#39;d love to hear from you!</p>
       {/* Contact Form */}
       <form method="post" encType="text/plain">
-        <input type="text" name="name" placeholder="Your name" />
-        <input type="email" name="email" placeholder="Your email" />
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email" />
         <textarea rows="5" name="message" placeholder="Your message" />
         <button type="submit" id="submit">Send</button>
       </form>
@@ -51,7 +51,7 @@ span {
 
 h1 {
   font-size: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 900;
   -webkit-letter-spacing: 5px;
   -moz-letter-spacing: 5px;
@@ -72,15 +72,18 @@ form {
     width: 425px;
     height: 50px;
     margin: 10px;
+    padding-left: 10px;
     font-size: 24px;
-    border: solid var(--JS-yellow);;
+    border: solid var(--JS-yellow);
   }
 
   textarea {
     width: 425px;
     margin: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
     font-size: 24px;
-    border: solid var(--JS-yellow);;
+    border: solid var(--JS-yellow);
   }
 
   button {
@@ -90,7 +93,7 @@ form {
     width: 150px;
     border-radius: 2%;
     font-size:20px;
-    border: solid var(--JS-yellow);;
+    border: solid var(--JS-yellow);
   }
 }
 

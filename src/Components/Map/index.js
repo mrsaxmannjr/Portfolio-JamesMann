@@ -60,25 +60,6 @@ class AnimatedMap extends Component {
   render() {
     return (
       <MapDiv>
-        <div id="map-controls" >
-          <select id="select" onChange={this.handleCitySelection} >
-            {
-              cities.map((city, i) => (
-                <option
-                  key={i}
-                  className="btn px1"
-                  data-city={i}
-                  value={JSON.stringify(city.coordinates)}
-                >
-                  { city.name }
-                </option>
-              ))
-            }
-          </select>
-          <button id="reset-button" onClick={this.handleReset}>
-            { "Reset Map" }
-          </button>
-        </div>
         <Motion
           defaultStyle={{
             zoom: 1,
@@ -186,6 +167,25 @@ class AnimatedMap extends Component {
             </ComposableMap>
           )}
         </Motion>
+        <div id="map-controls" >
+          <select id="select" onChange={this.handleCitySelection} >
+            {
+              cities.map((city, i) => (
+                <option
+                  key={i}
+                  className="btn px1"
+                  data-city={i}
+                  value={JSON.stringify(city.coordinates)}
+                >
+                  { city.name }
+                </option>
+              ))
+            }
+          </select>
+          <button id="reset-button" onClick={this.handleReset}>
+            { "Reset Map" }
+          </button>
+        </div>
       </MapDiv>
     );
   }
@@ -206,7 +206,7 @@ const MapDiv = styled.div`
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -220,7 +220,7 @@ const MapDiv = styled.div`
   margin-left: 5px;
   margin-right: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;

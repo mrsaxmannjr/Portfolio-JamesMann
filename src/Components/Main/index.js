@@ -9,7 +9,7 @@ const Main = () => (
     <Video />
     <TheMain>
       <h1 id="intro">I am James Mann </h1>
-      <p id="about">I am a full stack web developer, musician, martial artist and gamer.</p>
+      <p id="about">I&#39;m a full stack web developer, musician, martial artist and gamer.</p>
       <Overdrive id="img" duration="700" className="intro">
         <img src={logo} />
       </Overdrive>
@@ -33,6 +33,8 @@ img {
 }
 
 #intro {
+  margin-left: -4.5px;
+  margin-bottom: 10px;
   margin-top: 30px;
   font-size: 64px;
   font-weight: 300;
@@ -45,23 +47,23 @@ img {
 
 @keyframes fadein {
   0% { opacity:0; }
-  30% { opacity:0; }
+  5% { opacity:0; }
   100% { opacity:1; }
 }
 
 @-moz-keyframes fadein { /* Firefox */
   0% { opacity:0; }
-  30% { opacity:0; }
+  5% { opacity:0; }
   100% { opacity:1; }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
   0% { opacity:0; }
-  30% { opacity:0; }
+  5% { opacity:0; }
   100% { opacity:1; }
 }
 @-o-keyframes fadein { /* Opera */
   0% { opacity:0; }
-  30% { opacity:0; }
+  5% { opacity:0; }
   100% { opacity:1; }
 }
 
@@ -74,22 +76,22 @@ img {
 
 @keyframes fadein2 {
 0% { opacity:0; }
-50% { opacity:0; }
+30% { opacity:0; }
 100% { opacity:1; }
 }
 @-moz-keyframes fadein2 { /* Firefox */
   0% { opacity:0; }
-50% { opacity:0; }
+30% { opacity:0; }
 100% { opacity:1; }
 }
 @-webkit-keyframes fadein2 { /* Safari and Chrome */
   0% { opacity:0; }
-50% { opacity:0; }
+30% { opacity:0; }
 100% { opacity:1; }
 }
 @-o-keyframes fadein2 { /* Opera */
   0% { opacity:0; }
-50% { opacity:0; }
+30% { opacity:0; }
 100% { opacity:1; }
 }
 `;

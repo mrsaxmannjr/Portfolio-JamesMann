@@ -41,7 +41,7 @@ class Modal extends React.Component {
 
       <div onClick={this.handleOpen}>
       <div className="project-icon" >
-              <img className="project-img" src={dojo} alt="Readativity" />
+              <img className="project-img" src={dojo} alt="Dojo Sense" />
               <div className="overlay">
                 <h2>Dojo Sense</h2>
               </div>
@@ -53,7 +53,7 @@ class Modal extends React.Component {
           open={this.state.open}
         >
           <div className="project-icon" >
-              <img className="project-img" src={dojo} alt="Readativity" />
+              <img className="project-img" src={dojo} alt="Dojo Sense" />
               <div className="overlay">
                 <h2>Dojo Sense</h2>
                 <p>

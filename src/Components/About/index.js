@@ -73,7 +73,7 @@ h2 {
 }
 
 #places-visited {
-  margin-bottom: -15px;
+  margin-bottom: -3px;
   text-align: center;
 }
 

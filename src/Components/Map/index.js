@@ -226,5 +226,6 @@ const MapDiv = styled.div`
   padding-right: 0;
   padding-top: 0;
   font-size: 20px;
+  background: var(--JS-yellow);
 }
 `;

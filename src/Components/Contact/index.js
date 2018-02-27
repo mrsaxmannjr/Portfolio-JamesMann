@@ -94,6 +94,7 @@ form {
     border-radius: 2%;
     font-size:20px;
     border: solid var(--JS-yellow);
+    background: var(--JS-yellow);
   }
 }
 

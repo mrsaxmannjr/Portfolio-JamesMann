@@ -30,11 +30,11 @@ const Header = () => (
         </li>
 
         <li>
-          <Link to="/resume" onClick={this.addColor}>RESUME</Link>
+          <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
         </li>
 
         <li>
-          <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
+          <Link to="/resume" onClick={this.addColor}>RESUME</Link>
         </li>
 
         <li>

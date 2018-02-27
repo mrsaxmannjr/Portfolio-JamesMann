@@ -38,7 +38,7 @@ img {
 span {
   position: fixed;
   top: 0px;
-  right: 314px;
+  right: 155px;
 }
 
 h1{

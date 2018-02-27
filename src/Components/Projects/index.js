@@ -48,7 +48,7 @@ img {
 span {
   position: fixed;
   top: 0px;
-  right: 168px;
+  right: 302px;
 }
 
 h1 {
@@ -81,9 +81,8 @@ h3 {
 }
 
 #projects {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   z-index: 0;
 }
 
@@ -104,6 +103,7 @@ h3 {
 
 #projects-grid {
   align-items: center;
+  align-content:space-around;
   display: flex;
   flex-direction: row;
 }
@@ -115,8 +115,8 @@ h3 {
 
 .project-img {
   display: block;
-  height: 355px;
-  width: 355px;
+  height: 300px;
+  width: 300px;
   border: solid rgba(244, 219, 93, 1);
 }
 
@@ -139,7 +139,7 @@ h3 {
 }
 
 .project-icon:hover .overlay {
-  opacity: 1;
+  opacity: .7;
 }
 
 .overlay p {
@@ -153,15 +153,6 @@ h3 {
 .tech p {
   font-style: italic;
   font-size: 17px;
-}
-
-#projects-grid > a:nth-child(2) > div > img {
-  border-left: none;
-  border-right: none;
-}
-
-#projects-grid > a:nth-child(3) > div > img {
-  border-right: none;
 }
 
 #push-footer {

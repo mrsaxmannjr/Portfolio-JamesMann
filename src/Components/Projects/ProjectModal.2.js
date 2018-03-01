@@ -31,8 +31,6 @@ class Modal extends React.Component {
     ];
 
     return (
-      <section id="projects" name="projects">
-      <div id="projects-grid">
         <div onClick={this.handleOpen}>
           <div className="project-icon">
             <img className="project-img" src={dbfzBW} alt="Readativity" />
@@ -65,8 +63,6 @@ class Modal extends React.Component {
             </ModalStyle>
           </Dialog>
         </div>
-      </div>
-    </section>
   );
 }
 }
@@ -127,7 +123,7 @@ h3 {
 .project-img {
   height: 345px;
   width: 345px;
-  border: solid rgba(244, 219, 93, 1);
+  border: solid var(--JS-yellow);
 }
 
 p {

@@ -20,7 +20,7 @@ const Projects = () => (
     <div id="push-footer">
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
-        <div id="projects-grid">
+        <div id="grid">
           <ProjectModal1 />
           <ProjectModal2 />
           <ProjectModal3 />
@@ -34,7 +34,8 @@ const Projects = () => (
 export default Projects;
 
 const TheProjects = styled.div`
-max-width: 960px;
+// max-width: 960px;
+// width: 100vw;
 margin: 45px auto;
 margin-top: 0px;
 min-height: 70vh;
@@ -53,7 +54,7 @@ span {
 
 h1 {
     font-size: 38px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-weight: 900;
     -webkit-letter-spacing: 5px;
     -moz-letter-spacing: 5px;
@@ -62,28 +63,16 @@ h1 {
     text-align: center;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 900;
-  -webkit-letter-spacing: 5px;
-  -moz-letter-spacing: 5px;
-  -ms-letter-spacing: 5px;
-  letter-spacing: 5px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: 900;
-  padding: .5rem;
-  padding-top: .25rem;
-  padding-bottom: 0px;
-  margin-bottom: -5px;
-  color: var(--white);
-}
-
 #projects {
   display: flex;
   justify-content: center;
   z-index: 0;
+}
+
+#grid {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 #projects h2 {
@@ -92,20 +81,13 @@ h3 {
   font-weight: 900;
   padding: .5rem;
   padding-bottom: 0rem;
-  padding-top: 140px;
+  padding-top: 115px;
   text-transform: uppercase;
   -webkit-letter-spacing: 5px;
     -moz-letter-spacing: 5px;
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
     color: var(--black);
-}
-
-#projects-grid {
-  align-items: center;
-  align-content:space-around;
-  display: flex;
-  flex-direction: row;
 }
 
 .project-icon {
@@ -117,12 +99,11 @@ h3 {
   display: block;
   height: 300px;
   width: 300px;
-  border: solid rgba(244, 219, 93, 1);
+  border: solid var(--JS-yellow);
 }
 
 .overlay {
   align-items: center;
-  color: var(--black);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -135,28 +116,14 @@ h3 {
   opacity: 0;
   transition: .5s ease;
   background-color: var(--JS-yellow);
-
 }
 
 .project-icon:hover .overlay {
   opacity: .7;
 }
 
-.overlay p {
-  font-size: 1rem;
-  line-height: 1.2em;
-  padding: 0 .35rem;
-  margin-bottom: .55rem;
-  text-align: center;
-}
-
-.tech p {
-  font-style: italic;
-  font-size: 17px;
-}
-
 #push-footer {
-  margin-bottom: 98px;
+  margin-bottom: 97px;
 }
 
 #header-background {

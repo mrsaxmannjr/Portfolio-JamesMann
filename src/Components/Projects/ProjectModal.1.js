@@ -27,13 +27,9 @@ class Modal extends React.Component {
   };
 
   render() {
-    const actions = [
-      <FlatButton label="EXIT" primary={false} onClick={this.handleClose} />,
-    ];
+    const actions = [<FlatButton label="EXIT" primary={false} onClick={this.handleClose} />];
 
     return (
-      <section id="projects" name="projects">
-        <div id="projects-grid">
           <div onClick={this.handleOpen}>
             <div className="project-icon">
               <img className="project-img" src={readBW} alt="Readativity" />
@@ -41,7 +37,7 @@ class Modal extends React.Component {
                 <h2>Readativity</h2>
               </div>
             </div>
-            <Dialog id="dialog" actions={actions} modal={true} open={this.state.open} >
+            <Dialog id="dialog" actions={actions} modal={true} open={this.state.open}>
               <ModalStyle className="project-icon">
                 <div className="overlay">
                   <h2 id="modal-title">Readativity</h2>
@@ -52,8 +48,12 @@ class Modal extends React.Component {
                     week.
                   </p>
                   <div id="project-links">
-                  <Link to=""><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                  <Link to=""><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                    <Link to="">
+                      <RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D" />
+                    </Link>
+                    <Link to="">
+                      <RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D" />
+                    </Link>
                   </div>
                   <div id="modal-img">
                     <img className="project-img" src={read} alt="Readativity" />
@@ -70,8 +70,6 @@ class Modal extends React.Component {
               </ModalStyle>
             </Dialog>
           </div>
-        </div>
-      </section>
     );
   }
 }
@@ -132,7 +130,7 @@ const ModalStyle = styled.div`
   .project-img {
     height: 345px;
     width: 345px;
-    border: solid rgba(244, 219, 93, 1);
+    border: solid var(--JS-yellow);
   }
 
   p {

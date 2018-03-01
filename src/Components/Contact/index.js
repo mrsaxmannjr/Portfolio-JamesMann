@@ -1,32 +1,48 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
-const Contact = () => (
-  <TheContact>
-    <div id="header-background">
-      <p id="placeholder">placeholder</p>
-    </div>
-    <span>
-      {/* Logo animation */}
-      <Overdrive id="img" duration="700">
-        <img src={logo} alt="JM Logo" />
-      </Overdrive>
-    </span>
-    <div>
-      <h1>CONTACT</h1>
-      <p>Don&#39;t be a stranger, go ahead and drop me a message.  I&#39;d love to hear from you!</p>
-      {/* Contact Form */}
-      <form method="post" encType="text/plain">
-        <input type="text" name="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <textarea rows="5" name="message" placeholder="Your message" />
-        <button type="submit" id="submit">Send</button>
-      </form>
-    </div>
-  </TheContact>
-);
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+  render() {
+    return (
+      <TheContact>
+        <div id="header-background">
+          <p id="placeholder">placeholder</p>
+        </div>
+        <span>
+          {/* Logo animation */}
+          <Overdrive id="img" duration="700">
+            <img src={logo} alt="JM Logo" />
+          </Overdrive>
+        </span>
+        <div>
+          <h1>CONTACT</h1>
+          <p>Don&#39;t be a stranger, go ahead and drop me a message.  I&#39;d love to hear from you!</p>
+          {/* Contact Form */}
+          <form
+            method="post"
+            encType="text/plain"
+            onSubmit={event => {
+              this.props.submitHandler(event);
+            }}
+          >
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea rows="5" name="message" placeholder="Your message" />
+            <button type="submit" id="submit">Send</button>
+          </form>
+        </div>
+      </TheContact>
+    );
+  }
+}
 
 export default Contact;
 

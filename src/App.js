@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -12,23 +12,27 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
-const App = () => (
-  <Router>
-    <MuiThemeProvider>
-      <GridDiv className="App">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-        <Footer />
-      </GridDiv>
-    </MuiThemeProvider>
-  </Router>
-);
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <MuiThemeProvider>
+          <GridDiv className="App">
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Main} />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+            <Footer />
+          </GridDiv>
+        </MuiThemeProvider>
+      </Router>
+    );
+  }
+}
 
 export default App;
 

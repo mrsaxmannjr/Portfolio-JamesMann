@@ -47,8 +47,8 @@ class Modal extends React.Component {
                 Use Dojo Sense to browse different Martial Arts, watch a video, read a description and find dojos(schools) that teach the selected art.  The school location will be plotted on Google maps.  Dojo Sense is backed by a custom built API with full CRUD functionality.
                 </p>
                 <div id="project-links">
-                <Link to=""><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to=""><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://tower-fe.herokuapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://github.com/mrsaxmannjr/Dojo-Sense-Frontend" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={dojo} alt="Readativity" />

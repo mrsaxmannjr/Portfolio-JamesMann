@@ -48,10 +48,10 @@ class Modal extends React.Component {
                     week.
                   </p>
                   <div id="project-links">
-                    <Link to="">
+                    <Link to="https://readativity-app.herokuapp.com/" target="_blank">
                       <RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D" />
                     </Link>
-                    <Link to="">
+                    <Link to="https://github.com/Readativity/Frontend" target="_blank">
                       <RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D" />
                     </Link>
                   </div>

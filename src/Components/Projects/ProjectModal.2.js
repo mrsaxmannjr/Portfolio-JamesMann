@@ -47,8 +47,8 @@ class Modal extends React.Component {
                 Welcome to the one-stop-shop for all your Dragon Ball FighterZ needs! Here you can find details on how to play, the different control schemes, character stats and move-sets, create a custom team and more!
                 </p>
                 <div id="project-links">
-                <Link to=""><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to=""><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://dbfzguide.com/index.html" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://github.com/mrsaxmannjr/Dragon-Ball-FighterZ-guide-FrontEnd" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={dbfz} alt="Readativity" />

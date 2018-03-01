@@ -47,8 +47,8 @@ class Modal extends React.Component {
                 The winning app for the Dec. 2017 g70 Hackathon based on the theme "Where.com".  Built by a 4 person team with a 5 hour time constraint.
                 </p>
                 <div id="project-links">
-                <Link to=""><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to=""><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://whear-a7bc7.firebaseapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://github.com/mrsaxmannjr/Hackathon-Client" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={whear} alt="Readativity" />

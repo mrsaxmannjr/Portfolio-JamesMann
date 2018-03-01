@@ -11,6 +11,9 @@ const Video = props => (
     muted
     src={video}
   />
+  // <TheVideo src="https://www.youtube.com/embed/nolAEkIuj9Q?autoplay=1&controls=0&showinfo=0&autohide=1" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen />
+
+  // <iframe width="560" height="315" src="https://www.youtube.com/embed/nolAEkIuj9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 );
 
 export default Video;

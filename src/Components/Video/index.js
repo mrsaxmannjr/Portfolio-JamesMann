@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-import video from "./hd0933.mov";
+import video from "./portfolio-background.mp4";
 
-const Video = props => (
+
+const Video = () => (
   <TheVideo
     autoPlay
     loop
     muted
     src={video}
   />
-  // <TheVideo src="https://www.youtube.com/embed/nolAEkIuj9Q?autoplay=1&controls=0&showinfo=0&autohide=1" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen />
+  // <TheVideo src="https://www.youtube.com/embed/nolAEkIuj9Q?rel=0&autoplay=1&showinfo=0&modestbranding=0&controls=0&loop=1&enablejsapi=1" frameBorder="0" />
 
   // <iframe width="560" height="315" src="https://www.youtube.com/embed/nolAEkIuj9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 );

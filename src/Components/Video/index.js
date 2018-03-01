@@ -11,9 +11,6 @@ const Video = () => (
     muted
     src={video}
   />
-  // <TheVideo src="https://www.youtube.com/embed/nolAEkIuj9Q?rel=0&autoplay=1&showinfo=0&modestbranding=0&controls=0&loop=1&enablejsapi=1" frameBorder="0" />
-
-  // <iframe width="560" height="315" src="https://www.youtube.com/embed/nolAEkIuj9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 );
 
 export default Video;

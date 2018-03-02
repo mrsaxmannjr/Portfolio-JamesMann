@@ -38,11 +38,10 @@ class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData();
     const data = {
-      name: formData.get(this.state.name),
-      email: formData.get(this.state.email),
-      message: formData.get(this.state.message),
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
     };
     sendEmail(data);
   }

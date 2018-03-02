@@ -3,22 +3,14 @@ import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
-function postData(url, data) {
-  // Default options are marked with *
-  return fetch(url, {
-    body: JSON.stringify(data), // must match 'Content-Type' header
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *omit
+function sendEmail(data) {
+  return fetch("/send", {
+    method: "POST",
     headers: {
-      "user-agent": "Mozilla/4.0 MDN Example",
       "content-type": "application/json",
     },
-    method: "POST", // *GET, PUT, DELETE, etc.
-    mode: "cors", // no-cors, *same-origin
-    redirect: "follow", // *manual, error
-    referrer: "no-referrer", // *client
-  })
-    .then(response => response.json()); // parses response to JSON
+    body: JSON.stringify(data),
+  }).then(res => res.json());
 }
 
 class Contact extends Component {
@@ -46,9 +38,13 @@ class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    postData("http://example.com/answer", { answer: 42 })
-      .then(data => console.log(data))
-      .catch(error => console.error(error));
+    const formData = new FormData();
+    const data = {
+      name: formData.get(this.state.name),
+      email: formData.get(this.state.email),
+      message: formData.get(this.state.message),
+    };
+    sendEmail(data);
   }
 
   render() {

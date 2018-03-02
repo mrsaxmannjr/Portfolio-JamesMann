@@ -4,7 +4,7 @@ import Overdrive from "react-overdrive";
 import logo from "./js.png";
 
 function sendEmail(data) {
-  return fetch("/send", {
+  return fetch("https://portfolio-contact.herokuapp.com/send", {
     method: "POST",
     headers: {
       "content-type": "application/json",

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
+import { Link } from "react-router-dom";
 import logo from "./js.png";
 
 function sendEmail(data) {
@@ -60,7 +61,7 @@ class Contact extends Component {
         </span>
         <div>
           <h1>CONTACT</h1>
-          <p>Don&#39;t be a stranger, go ahead and drop me a message.  I&#39;d love to hear from you!</p>
+          <p id="message">Please drop me a message from here or find me at: <Link id="email" to="mailto: mrsaxmannjr@gmail.com">mrsaxmannjr@gmail.com</Link></p>
 
           {/* Contact Form */}
 
@@ -146,6 +147,14 @@ form {
   }
 }
 
+#email {
+  color: var(--JS-yellow);
+}
+
+#message {
+  text-align: center;
+}
+
 #header-background {
   display: -webkit-box;
   display: -webkit-flex;
@@ -167,5 +176,42 @@ form {
 
 #placeholder {
   visibility: hidden;
+}
+
+@media (max-width: 666px) {
+  img {
+    display: none;
+  }
+}
+
+@media (max-width: 451px) {
+  text-align: center;
+
+  form {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    input {
+      width: 90vw;
+      height: 50px;
+      margin: 10px;
+      padding-left: 10px;
+      font-size: 24px;
+      border: solid var(--JS-yellow);
+    }
+
+    textarea {
+      width: 90vw;
+      margin: 10px;
+      padding-left: 10px;
+      padding-top: 7px;
+      font-size: 24px;
+      border: solid var(--JS-yellow);
+    }
+  }
 }
 `;

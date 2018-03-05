@@ -26,19 +26,19 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/about" onClick={this.addColor} >ABOUT</Link>
+          <Link id="about" to="/about" >ABOUT</Link>
         </li>
 
         <li>
-          <Link to="/projects" onClick={this.addColor}>PROJECTS</Link>
+          <Link to="/projects" >PROJECTS</Link>
         </li>
 
         <li>
-          <Link to="/resume" onClick={this.addColor}>RESUME</Link>
+          <Link to="/resume" >RESUME</Link>
         </li>
 
         <li>
-          <Link to="/contact" onClick={this.addColor}>CONTACT</Link>
+          <Link id="contact" to="/contact" >CONTACT</Link>
         </li>
       </ul>
     </nav>
@@ -50,14 +50,11 @@ export default Header;
 
 const TheHeader = styled.header`
 display: -webkit-box;
-display: -webkit-flex;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-pack: space-between;
--webkit-justify-content: space-between;
 -ms-flex-pack: space-between;
 justify-content: space-between;
--webkit-flex-wrap: wrap;
 -ms-flex-wrap: wrap;
 flex-wrap: wrap;
 top: 0;
@@ -74,11 +71,19 @@ position: fixed;
 }
 
 //Full name animation: fadeIn on Header hover
+@media (min-width: 667px) {
   :hover {
     #column {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-left: -5px;
       margin-top: -3px;
       width: 48px;
@@ -103,12 +108,19 @@ position: fixed;
       -o-animation: fadein2 1s; /* Opera */
     }
   }
-
+}
   //Full name display:none Header hover off
   #column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: -3px;
     margin-top: -10px;
     width: 48px;
@@ -124,19 +136,7 @@ position: fixed;
     100% { opacity:1; }
   }
 
-  @-moz-keyframes fadein { /* Firefox */
-    0% { opacity:0; }
-    30% { opacity:0; }
-    100% { opacity:1; }
-}
-
   @-webkit-keyframes fadein { /* Safari and Chrome */
-    0% { opacity:0; }
-    30% { opacity:0; }
-    100% { opacity:1; }
-  }
-
-  @-o-keyframes fadein { /* Opera */
     0% { opacity:0; }
     30% { opacity:0; }
     100% { opacity:1; }
@@ -157,19 +157,7 @@ position: fixed;
     100% { opacity:1; }
   }
 
-  @-moz-keyframes fadein2 { /* Firefox */
-    0% { opacity:0; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-
   @-webkit-keyframes fadein2 { /* Safari and Chrome */
-    0% { opacity:0; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-
-  @-o-keyframes fadein2 { /* Opera */
     0% { opacity:0; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -206,4 +194,58 @@ a {
   font-size: 16px;
   padding: 15px 0px 18px 40px;
 }
+
+@media (max-width: 666px) {
+#row {
+ display: none;
+}
+
+  nav {
+    margin-right: 0px;
+    margin-left: -20px;
+    a {
+      padding-left: 15px;
+      padding-right: 0;
+    }
+    #about {
+      padding-left: 0px;
+    }
+    #contact {
+      padding-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  #row {
+    display: none;
+   }
+
+   #logo {
+     text-decoration: none;
+     padding-left: 0;
+     padding-top: 0;
+     img {
+       height: 30px;
+     }
+   }
+     nav {
+       margin-right: -5px;
+       margin-left: -20px;
+       a {
+         padding-top: 7px;
+         padding-left: 15px;
+         padding-right: 0;
+         font-size: 13px;
+         letter-spacing: 2px;
+       }
+       #about {
+         padding-left: 0px;
+       }
+       #contact {
+         padding-right: 5px;
+       }
+     }
+}
+
 `;

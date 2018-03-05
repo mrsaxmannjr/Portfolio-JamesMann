@@ -34,8 +34,6 @@ const Projects = () => (
 export default Projects;
 
 const TheProjects = styled.div`
-// max-width: 960px;
-// width: 100vw;
 margin: 45px auto;
 margin-top: 0px;
 min-height: 70vh;
@@ -64,14 +62,22 @@ h1 {
 }
 
 #projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 0;
 }
 
 #grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100vw;
 }
 
@@ -103,9 +109,16 @@ h1 {
 }
 
 .overlay {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -114,6 +127,8 @@ h1 {
   height: 100%;
   width: 100%;
   opacity: 0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
   background-color: var(--JS-yellow);
 }
@@ -128,14 +143,11 @@ h1 {
 
 #header-background {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   top: 0;
@@ -147,5 +159,23 @@ h1 {
 
 #placeholder {
   visibility: hidden;
+}
+
+@media (max-width: 1260px) {
+  #grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 1300px;
+  }
+}
+
+@media (max-width: 666px) {
+  img {
+    display: none;
+  }
 }
 `;

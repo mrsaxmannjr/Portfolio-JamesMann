@@ -37,7 +37,7 @@ class Modal extends React.Component {
                 <h2>Readativity</h2>
               </div>
             </div>
-            <Dialog id="dialog" actions={actions} modal={true} open={this.state.open}>
+            <Dialog id="dialog" actions={actions} modal={true} open={this.state.open} autoScrollBodyContent={true}>
               <ModalStyle className="project-icon">
                 <div className="overlay">
                   <h2 id="modal-title">Readativity</h2>
@@ -77,14 +77,80 @@ class Modal extends React.Component {
 export default Modal;
 
 const ModalStyle = styled.div`
-  color: var(--black);
+color: var(--black);
 
-  img {
-    height: 127px;
-  }
+img {
+  height: 127px;
+}
 
+#modal-title {
+  font-size: 1.7em;
+  text-decoration: underline;
+  font-weight: 900;
+  padding: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 5px;
+  -moz-letter-spacing: 5px;
+  -ms-letter-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+  -webkit-letter-spacing: 5px;
+  -moz-letter-spacing: 5px;
+  -ms-letter-spacing: 5px;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 900;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0px;
+  margin-bottom: -5px;
+}
+
+#modal-img {
+  display: flex;
+  justify-content: center;
+}
+
+#project-links {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+
+.project-img {
+  height: 345px;
+  width: 345px;
+  border: solid var(--JS-yellow);
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.2em;
+  padding: 0 0.35rem;
+  margin-bottom: 0.55rem;
+  text-align: center;
+  padding-left: 0;
+  font-size: 17px;
+  text-align: left;
+}
+
+#project-description {
+  margin-bottom: 0;
+}
+
+@media (max-width: 465px) {
   #modal-title {
-    font-size: 1.7em;
+    font-size: 25px;
     text-decoration: underline;
     font-weight: 900;
     padding: 0;
@@ -94,7 +160,7 @@ const ModalStyle = styled.div`
     -moz-letter-spacing: 5px;
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
-    text-align: left;
+    text-align: center;
   }
 
   h3 {
@@ -104,7 +170,7 @@ const ModalStyle = styled.div`
     -moz-letter-spacing: 5px;
     -ms-letter-spacing: 5px;
     letter-spacing: 5px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 900;
@@ -115,24 +181,6 @@ const ModalStyle = styled.div`
     margin-bottom: -5px;
   }
 
-  #modal-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  #project-links {
-    display: flex;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-  }
-
-  .project-img {
-    height: 345px;
-    width: 345px;
-    border: solid var(--JS-yellow);
-  }
-
   p {
     font-size: 17px;
     line-height: 1.2em;
@@ -141,10 +189,21 @@ const ModalStyle = styled.div`
     text-align: center;
     padding-left: 0;
     font-size: 17px;
-    text-align: left;
+    text-align: center;
   }
 
-  #project-description {
-    margin-bottom: 0;
+  .project-img {
+    height: 100%;
+    width: 100%;
+    border: solid var(--JS-yellow);
   }
+
+  #project-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+  }
+}
 `;

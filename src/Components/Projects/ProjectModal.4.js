@@ -38,7 +38,7 @@ class Modal extends React.Component {
               <h2>Whear.com</h2>
             </div>
           </div>
-          <Dialog id="dialog" actions={actions} modal={true} open={this.state.open} >
+          <Dialog id="dialog" actions={actions} modal={true} open={this.state.open} autoScrollBodyContent={true}>
             <ModalStyle className="project-icon">
               <div className="overlay">
                 <h2 id="modal-title">Whear.com</h2>
@@ -139,5 +139,64 @@ p {
 
 #project-description {
   margin-bottom: 0;
+}
+
+@media (max-width: 465px) {
+  #modal-title {
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 900;
+    padding: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 5px;
+    -moz-letter-spacing: 5px;
+    -ms-letter-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 900;
+    -webkit-letter-spacing: 5px;
+    -moz-letter-spacing: 5px;
+    -ms-letter-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    padding: 0.5rem;
+    padding-left: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.2em;
+    padding: 0 0.35rem;
+    margin-bottom: 0.55rem;
+    text-align: center;
+    padding-left: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .project-img {
+    height: 100%;
+    width: 100%;
+    border: solid var(--JS-yellow);
+  }
+
+  #project-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+  }
 }
 `;

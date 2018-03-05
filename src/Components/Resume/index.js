@@ -74,4 +74,10 @@ h1{
 #placeholder {
   visibility: hidden;
 }
+
+@media (max-width: 666px) {
+  img {
+    display: none;
+  }
+}
 `;

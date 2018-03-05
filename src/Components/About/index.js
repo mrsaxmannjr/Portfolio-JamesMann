@@ -18,7 +18,7 @@ const About = () => (
     <div>
       <h1>ABOUT</h1>
       <p>
-      Hi, I&#39;m James Mann, a Full Stack Web Developer based in Denver, CO. My lifelong training in music gives me a unique, creative, collaborative and focused approach to building web apps.
+      Hi, I&#39;m James Mann, a Web Developer based in Denver, CO. My lifelong training in music gives me a unique, creative, collaborative and focused approach to building web apps.
       </p>
 
       <h2>WHERE IN THE WORLD</h2>
@@ -84,14 +84,11 @@ p {
 
 #header-background {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   top: 0;
@@ -103,5 +100,12 @@ p {
 
 #placeholder {
   visibility: hidden;
+}
+
+@media (max-width: 666px) {
+  text-align: center;
+    img {
+      display: none;
+    }
 }
 `;

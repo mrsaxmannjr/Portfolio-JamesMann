@@ -50,18 +50,7 @@ img {
   5% { opacity:0; }
   100% { opacity:1; }
 }
-
-@-moz-keyframes fadein { /* Firefox */
-  0% { opacity:0; }
-  5% { opacity:0; }
-  100% { opacity:1; }
-}
 @-webkit-keyframes fadein { /* Safari and Chrome */
-  0% { opacity:0; }
-  5% { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes fadein { /* Opera */
   0% { opacity:0; }
   5% { opacity:0; }
   100% { opacity:1; }
@@ -79,19 +68,16 @@ img {
 30% { opacity:0; }
 100% { opacity:1; }
 }
-@-moz-keyframes fadein2 { /* Firefox */
-  0% { opacity:0; }
-30% { opacity:0; }
-100% { opacity:1; }
-}
 @-webkit-keyframes fadein2 { /* Safari and Chrome */
   0% { opacity:0; }
 30% { opacity:0; }
 100% { opacity:1; }
 }
-@-o-keyframes fadein2 { /* Opera */
-  0% { opacity:0; }
-30% { opacity:0; }
-100% { opacity:1; }
+
+@media (max-width: 543px) {
+  text-align: center;
+  #intro {
+  font-size: 40px;
+  }
 }
 `;

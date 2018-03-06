@@ -4,7 +4,6 @@ import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "./js.png";
 import whear from "./Assets/whearimg.jpg";
 import whearBW from "./Assets/whearimngBW.jpg";
 

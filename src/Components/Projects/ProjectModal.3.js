@@ -4,7 +4,6 @@ import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "./js.png";
 import dojo from "./Assets/dojoimg.jpg";
 import dojoBW from "./Assets/dojoimgBW.jpg";
 
@@ -48,7 +47,7 @@ class Modal extends React.Component {
                 </p>
                 <div id="project-links">
                 <Link to="https://tower-fe.herokuapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to="https://github.com/mrsaxmannjr/Dojo-Sense-Frontend" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <Link to="https://github.com/mrsaxmannjr/DojoSenseFE" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={dojo} alt="Readativity" />

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
+import { Link } from "react-router-dom";
 import logo from "./js.png";
-import resume from "./James Mann - resume.pdf";
+import resumePNG from "./James Mann - resume.png";
 
 const Resume = () => (
   <TheResume>
@@ -11,12 +12,17 @@ const Resume = () => (
     </div>
     <span>
       <Overdrive id="img" duration="700">
-        <img src={logo} alt="JM Logo" />
+        <img id="logo" src={logo} alt="JM Logo" />
       </Overdrive>
     </span>
     <div>
       <h1>RESUME</h1>
-      <embed src={resume} width="800px" height="1070px" />
+      <div id="resumes">
+        <img id="resume" src={resumePNG} alt="resume" visibility="hidden" />
+        <Link to="https://docs.google.com/document/d/1YArtUBpybs7357zETfrQdEawWwP7pfeV/export?format=pdf">
+          <button >Download Resume </button>
+        </Link>
+      </div>
     </div>
   </TheResume>
 );
@@ -33,6 +39,28 @@ padding-top: 130px;
 
 img {
   height: 127px;
+}
+
+#resumes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  margin: 10px;
+  margin-bottom: 6px;
+  height: 30px;
+  width: 200px;
+  border-radius: 2%;
+  font-size:20px;
+  border: solid var(--JS-yellow);
+  background: var(--JS-yellow);
 }
 
 span {
@@ -76,7 +104,7 @@ h1{
 }
 
 @media (max-width: 666px) {
-  img {
+  #logo {
     display: none;
   }
 }

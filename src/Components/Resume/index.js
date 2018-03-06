@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
-import { Link } from "react-router-dom";
 import logo from "./js.png";
 import resumePNG from "./James Mann - resume.png";
 
@@ -19,9 +18,9 @@ const Resume = () => (
       <h1>RESUME</h1>
       <div id="resumes">
         <img id="resume" src={resumePNG} alt="resume" visibility="hidden" />
-        <Link to="https://docs.google.com/document/d/1YArtUBpybs7357zETfrQdEawWwP7pfeV/export?format=pdf">
+        <a href="https://drive.google.com/uc?export=download&id=1YArtUBpybs7357zETfrQdEawWwP7pfeV">
           <button >Download Resume </button>
-        </Link>
+        </a>
       </div>
     </div>
   </TheResume>

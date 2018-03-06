@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
-import { Link } from "react-router-dom";
 import logo from "./js.png";
 
 function sendEmail(data) {
@@ -61,7 +60,7 @@ class Contact extends Component {
         </span>
         <div>
           <h1>CONTACT</h1>
-          <p id="message">Please drop me a message from here or find me at: <Link id="email" to="mailto: mrsaxmannjr@gmail.com">mrsaxmannjr@gmail.com</Link></p>
+          <p id="message">Please drop me a message from here or find me at: <a id="email" href="mailto: mrsaxmannjr@gmail.com">mrsaxmannjr@gmail.com</a></p>
 
           {/* Contact Form */}
 

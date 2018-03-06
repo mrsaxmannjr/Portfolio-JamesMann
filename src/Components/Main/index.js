@@ -8,6 +8,9 @@ const Main = () => (
   <div>
     <Video />
     <TheMain>
+      <div id="header-background">
+        <p id="placeholder">placeholder</p>
+      </div>
       <h1 id="intro">I am James Mann </h1>
       <p id="about">I&#39;m a full stack web developer, musician, martial artist and gamer.</p>
       <Overdrive id="img" duration="700" className="intro">
@@ -27,6 +30,10 @@ min-height: 70vh;
 padding: 80px 5% 0px;
 padding-top: 130px;
 padding-bottom: 50px;
+
+#header-background, #placeholder {
+  display: none;
+}
 
 img {
   height: 250px;
@@ -74,10 +81,52 @@ img {
 100% { opacity:1; }
 }
 
+@media (max-width: 666px) {
+  #header-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: #111;
+  }
+
+  #placeholder {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 543px) {
   text-align: center;
   #intro {
   font-size: 40px;
+  }
+
+  #header-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    background: #111;
+  }
+
+  #placeholder {
+    visibility: hidden;
   }
 }
 `;

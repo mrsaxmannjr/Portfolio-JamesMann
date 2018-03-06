@@ -59,19 +59,14 @@ img {
 
 #links {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 5px;
 }
-
-// Copyright
-text-align: center;
 
 li{
   padding: 0 20px 0 20px;

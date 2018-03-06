@@ -2,7 +2,6 @@ import React from "react";
 import Dialog from "material-ui/Dialog";
 import FlatButton from "material-ui/FlatButton";
 import RaisedButton from "material-ui/RaisedButton";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import read from "./Assets/readimg.jpg";
 import readBW from "./Assets/readimgBW.jpg";
@@ -46,12 +45,12 @@ class Modal extends React.Component {
                     week.
                   </p>
                   <div id="project-links">
-                    <Link to="https://readativity-app.herokuapp.com/" target="_blank">
+                    <a href="https://readativity-app.herokuapp.com/" target="_blank">
                       <RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D" />
-                    </Link>
-                    <Link to="https://github.com/Readativity/Frontend" target="_blank">
+                    </a>
+                    <a href="https://github.com/Readativity/Frontend" target="_blank">
                       <RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D" />
-                    </Link>
+                    </a>
                   </div>
                   <div id="modal-img">
                     <img className="project-img" src={read} alt="Readativity" />

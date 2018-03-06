@@ -2,7 +2,6 @@ import React from 'react';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import dbfz from "./Assets/dbfzimg.jpg";
 import dbfzBW from "./Assets/dbfzimgBW.jpg";
@@ -46,8 +45,8 @@ class Modal extends React.Component {
                 Welcome to the one-stop-shop for all your Dragon Ball FighterZ needs! Here you can find details on how to play, the different control schemes, character stats and move-sets, create a custom team and more!
                 </p>
                 <div id="project-links">
-                <Link to="https://dbfzguide.com/index.html" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to="https://github.com/mrsaxmannjr/dbfzguide-FrontEnd" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <a href="https://dbfzguide.com/index.html" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></a>
+                <a href="https://github.com/mrsaxmannjr/dbfzguide-FrontEnd" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></a>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={dbfz} alt="Readativity" />

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import github from "./github-sign.svg";
 import linkedIn from "./linkedin.svg";
@@ -12,15 +11,15 @@ const Footer = () => (
     <nav>
       <ul id="links">
         <li >
-          <Link to="https://github.com/mrsaxmannjr" target="_blank"><img src={github} alt="Github Icon" /> </Link>
+          <a href="https://github.com/mrsaxmannjr" target="_blank"><img src={github} alt="Github Icon" /> </a>
         </li>
 
         <li >
-          <Link to="https://www.linkedin.com/in/mrsaxmannjr/" target="_blank"><img src={linkedIn} alt="LinkedIn Icon" /></Link>
+          <a href="https://www.linkedin.com/in/mrsaxmannjr/" target="_blank"><img src={linkedIn} alt="LinkedIn Icon" /></a>
         </li>
 
         <li >
-          <Link to="https://talent.galvanize.com/students/2067" target="_blank"><img src={talent}alt="Galvanize Talent Icon" /></Link>
+          <a href="https://talent.galvanize.com/students/2067" target="_blank"><img src={talent}alt="Galvanize Talent Icon" /></a>
         </li>
       </ul>
     </nav>

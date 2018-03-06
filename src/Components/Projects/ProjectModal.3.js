@@ -2,7 +2,6 @@ import React from 'react';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import dojo from "./Assets/dojoimg.jpg";
 import dojoBW from "./Assets/dojoimgBW.jpg";
@@ -46,8 +45,8 @@ class Modal extends React.Component {
                 Use Dojo Sense to browse different Martial Arts, watch a video, read a description and find dojos(schools) that teach the selected art.  The school location will be plotted on Google maps.  Dojo Sense is backed by a custom built API with full CRUD functionality.
                 </p>
                 <div id="project-links">
-                <Link to="https://tower-fe.herokuapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></Link>
-                <Link to="https://github.com/mrsaxmannjr/DojoSenseFE" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></Link>
+                <a href="https://tower-fe.herokuapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></a>
+                <a href="https://github.com/mrsaxmannjr/DojoSenseFE" target="_blank"><RaisedButton label="GITHUB REPO" style={style} backgroundColor="#F4DB5D"/></a>
                 </div>
                 <div id="modal-img">
                   <img className="project-img" src={dojo} alt="Readativity" />

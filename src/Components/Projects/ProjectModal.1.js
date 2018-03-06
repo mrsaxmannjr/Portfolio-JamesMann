@@ -4,7 +4,6 @@ import FlatButton from "material-ui/FlatButton";
 import RaisedButton from "material-ui/RaisedButton";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import FontIcon from "material-ui/FontIcon";
 import read from "./Assets/readimg.jpg";
 import readBW from "./Assets/readimgBW.jpg";
 

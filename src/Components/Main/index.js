@@ -11,7 +11,7 @@ const Main = () => (
       <h1 id="intro">I am James Mann </h1>
       <p id="about">I&#39;m a full stack web developer, musician, martial artist and gamer.</p>
       <Overdrive id="img" duration="700" className="intro">
-        <img src={logo} />
+        <img src={logo} alt="JM logo" />
       </Overdrive>
     </TheMain>
   </div>

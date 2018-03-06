@@ -103,7 +103,6 @@ p {
 }
 
 @media (max-width: 666px) {
-  text-align: center;
     img {
       display: none;
     }

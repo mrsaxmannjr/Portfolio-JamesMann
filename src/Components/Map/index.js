@@ -31,7 +31,6 @@ class AnimatedMap extends Component {
 
   handleCitySelection(evt) {
     const location = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
-    console.log(location);
 
     this.setState({
       center: location,
@@ -41,8 +40,7 @@ class AnimatedMap extends Component {
   }
 
   handleMarkerVisibility(evt) {
-    const location = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
-    console.log(location);
+    // const location = JSON.parse(evt.target.options[evt.target.selectedIndex].value);
 
     this.setState({
       visibility: "visible",

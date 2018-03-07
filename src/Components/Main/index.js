@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
+import MediaQuery from "react-responsive";
 import logo from "./js.png";
 import Video from "../Video";
+import Poster from "../Poster";
 
 const Main = () => (
   <div>
-    <Video />
+    <MediaQuery query="(min-width: 813px)">
+      <Video />
+    </MediaQuery>
+    <MediaQuery query="(max-width: 812px)">
+      <Poster />
+    </MediaQuery>
     <TheMain>
       <div id="header-background">
         <p id="placeholder">placeholder</p>

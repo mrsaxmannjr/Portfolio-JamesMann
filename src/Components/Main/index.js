@@ -134,4 +134,8 @@ img {
     visibility: hidden;
   }
 }
+
+@media (max-width: 360px) {
+  padding-bottom: 20px;
+}
 `;

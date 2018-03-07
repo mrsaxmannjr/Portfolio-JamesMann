@@ -71,7 +71,7 @@ position: fixed;
 }
 
 //Full name animation: fadeIn on Header hover
-@media (min-width: 667px) {
+@media (min-width: 813px) {
   :hover {
     #column {
       display: -webkit-box;
@@ -195,9 +195,33 @@ a {
   padding: 15px 0px 18px 40px;
 }
 
+@media (max-width: 812px) {
+  #row {
+    display: none;
+   }
+
+   #logo {
+    text-decoration: none;
+    padding-left: 0;
+    padding-top: 0;
+    img {
+      height: 40px;
+    }
+  }
+}
+
 @media (max-width: 666px) {
 #row {
  display: none;
+}
+
+#logo {
+  text-decoration: none;
+  padding-left: 0;
+  padding-top: 0;
+  img {
+    height: 40px;
+  }
 }
 
   nav {

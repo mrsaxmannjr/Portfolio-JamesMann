@@ -267,4 +267,24 @@ a {
     }
   }
 }
+
+@media (max-width: 325px) {
+  nav {
+    margin-right: -5px;
+    margin-left: -20px;
+    a {
+      padding-top: 7px;
+      padding-left: 7px;
+      padding-right: 0;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    #about {
+      padding-left: 0px;
+    }
+    #contact {
+      padding-right: 5px;
+    }
+  }
+}
 `;

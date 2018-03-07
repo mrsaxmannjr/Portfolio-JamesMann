@@ -81,6 +81,28 @@ img {
 100% { opacity:1; }
 }
 
+@media (max-width: 812px) {
+  #header-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: #111;
+  }
+
+  #placeholder {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 666px) {
   padding-top: 70px;
   #header-background {

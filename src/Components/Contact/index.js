@@ -208,6 +208,20 @@ form {
 
 @media (max-width: 451px) {
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  min-height: 60vh;
+
+  h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    -webkit-letter-spacing: 5px;
+    -moz-letter-spacing: 5px;
+    -ms-letter-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
 
   form {
     display: -webkit-box;

@@ -104,7 +104,12 @@ img {
 }
 
 @media (max-width: 543px) {
-  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  min-height: 60vh;
+  img {
+    height: 150px;
+  }
   #intro {
   font-size: 40px;
   }

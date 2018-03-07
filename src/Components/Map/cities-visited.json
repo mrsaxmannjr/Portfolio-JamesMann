@@ -227,14 +227,6 @@
   { "name": "Gdansk (Gdynia), Poland", "coordinates": [18.530541, 54.518890] },
   { "name": "Isafjordur, Iceland", "coordinates": [-23.188860, 66.061106] },
   { "name": "Dundee, Scotland", "coordinates": [-2.970721, 56.462018] },
-  { "name": "Alta, Norway", "coordinates": [23.327905, 69.955030] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
-  { "name": "CITY", "coordinates": [LONG, LAT] },
+  { "name": "Alta, Norway", "coordinates": [23.327905, 69.955030] }
 
 ]

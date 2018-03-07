@@ -129,6 +129,10 @@ p {
 }
 
 @media (max-width: 543px) {
+  padding-top: 40px;
+  padding-bottom: 0px;
+  min-height: 60vh;
+
   #header-background {
     display: -webkit-box;
     display: -ms-flexbox;

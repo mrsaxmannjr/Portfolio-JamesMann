@@ -82,6 +82,7 @@ img {
 }
 
 @media (max-width: 666px) {
+  padding-top: 70px;
   #header-background {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -135,7 +136,7 @@ img {
   }
 }
 
-@media (max-width: 360px) {
-  padding-bottom: 20px;
+@media (max-width: 400px) {
+  padding-bottom: 0px;
 }
 `;

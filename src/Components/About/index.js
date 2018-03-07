@@ -103,6 +103,7 @@ p {
 }
 
 @media (max-width: 666px) {
+  padding-top: 70px;
     img {
       display: none;
     }

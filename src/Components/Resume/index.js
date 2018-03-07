@@ -107,6 +107,7 @@ h1{
 }
 
 @media (max-width: 666px) {
+  padding-top: 70px;
   #logo {
     display: none;
   }

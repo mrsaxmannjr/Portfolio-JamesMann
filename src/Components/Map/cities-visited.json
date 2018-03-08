@@ -228,5 +228,21 @@
   { "name": "Isafjordur, Iceland", "coordinates": [-23.188860, 66.061106] },
   { "name": "Dundee, Scotland", "coordinates": [-2.970721, 56.462018] },
   { "name": "Alta, Norway", "coordinates": [23.327905, 69.955030] }
+  { "name": "Puntarenas, Costa Rica", "coordinates": [-84.829421, 9.977844] },
+  { "name": "Puerto Quetzal, Guatemala", "coordinates": [-90.758034, 13.930629] },
+  { "name": "Colombo, Sri Lanka", "coordinates": [79.861243, 6.927079] },
+  { "name": "Montevideo, Uruguay", "coordinates": [-56.164531, -34.901113] },
+  { "name": "Puerto Madryn, Argentina", "coordinates": [-65.031718, -42.769448] },
+  { "name": "Falkland Islands (Stanley)", "coordinates": [-57.851663, -51.697713] },
+  { "name": "Ushuaia, Argentina", "coordinates": [-68.302951, -54.801912] },
+  { "name": "Punta Arenas, Chile", "coordinates": [-70.917068, -53.163833] },
+  { "name": "Puerto Montt, Chile", "coordinates": [-72.941136, -41.468917] },
+  { "name": "Santiago, Chile", "coordinates": [-70.669265, -33.448890] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
+  { "name": "LOCATION", "coordinates": [LONG, LAT] },
 
 ]

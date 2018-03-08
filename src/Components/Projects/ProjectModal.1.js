@@ -156,7 +156,7 @@ p {
 @media (max-width: 465px) {
   #modal-title {
     font-size: 25px;
-    text-decoration: underline;
+    // text-decoration: underline;
     font-weight: 900;
     padding: 0;
     padding-bottom: 0;
@@ -177,8 +177,6 @@ p {
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline;
-    font-weight: 900;
     padding: 0.5rem;
     padding-left: 0;
     padding-top: 0.25rem;
@@ -187,14 +185,12 @@ p {
   }
 
   p {
-    font-size: 17px;
     line-height: 1.2em;
     padding: 0 0.35rem;
     margin-bottom: 0.55rem;
-    text-align: center;
     padding-left: 0;
     font-size: 17px;
-    text-align: center;
+    text-align: left;
   }
 
   .project-img {

@@ -178,6 +178,13 @@ h1 {
   }
 }
 
+@media (max-width: 812px) {
+  .project-icon .overlay {
+    opacity: .7;
+  }
+
+}
+
 @media (max-width: 666px) {
   padding-top: 70px;
   img {

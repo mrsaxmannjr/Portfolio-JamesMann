@@ -52,7 +52,7 @@ class Modal extends React.Component {
                   <img className="project-img" src={whear} alt="Readativity" />
                 </div>
                 <div className="tech">
-                  <h3>Technologies &amp; TECHNIQUES</h3>
+                  <h3>TECH &amp; TOOLS</h3>
                   <p>
                   HTML5, CSS3, Materialize CSS, Heroku, Firebase, Express.js, Adobe Photoshop, Git/Github
                   </p>

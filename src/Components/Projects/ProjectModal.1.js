@@ -56,7 +56,7 @@ class Modal extends React.Component {
                     <img className="project-img" src={read} alt="Readativity" />
                   </div>
                   <div className="tech">
-                    <h3>Technologies &amp; TECHNIQUES</h3>
+                    <h3>TECH &amp; TOOLS</h3>
                     <p>
                       React.js, Chart.js, HTML5, CSS3, JavaScript(ES6), Node.js, PostgreSQL,
                       Knex.js, Express.js, Heroku, Cypress, Google News API, Git/Github, Agile

@@ -42,7 +42,7 @@ class Modal extends React.Component {
                 <h2 id="modal-title">Dojo Sense</h2>
                 <p id="project-intro">Find Martial Arts Dojos in your area!</p>
                 <p id="project-description">
-                Use Dojo Sense to browse different Martial Arts, watch a video, read a description and find dojos(schools) that teach the selected art.  The school location will be plotted on Google maps.  Dojo Sense is backed by a custom built API with full CRUD functionality.
+                Use Dojo Sense to browse different Martial Arts, watch a video, read a description and find dojos(schools) that teach the selected art.  The school location will be plotted on Google maps.  Dojo Sense is backed by a custom built API with full CRUDL functionality.
                 </p>
                 <div id="project-links">
                 <a href="https://tower-fe.herokuapp.com/" target="_blank"><RaisedButton label="LIVE SITE" style={style} backgroundColor="#F4DB5D"/></a>
@@ -52,7 +52,7 @@ class Modal extends React.Component {
                   <img className="project-img" src={dojo} alt="Readativity" />
                 </div>
                 <div className="tech">
-                  <h3>Technologies &amp; TECHNIQUES</h3>
+                  <h3>TECH &amp; TOOLS</h3>
                   <p>
                   React.js, HTML5, CSS3, JavaScript(ES6), Node.js, PostgreSQL, Knex.js, Express.js, Heroku, google-map-react, Cypress, Git/Github
                   </p>

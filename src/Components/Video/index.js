@@ -32,5 +32,7 @@ video {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 `;

@@ -30,9 +30,6 @@
   "coordinates": [-61.817521, 17.074656],
   "name": "Antigua"
 },  {
-  "coordinates": [-61.817521, 17.074656],
-  "name": "Antigua"
-},  {
   "coordinates": [140.747365, 40.822072],
   "name": "Aomori, Japan"
 },  {
@@ -50,10 +47,7 @@
 },  {
   "coordinates": [23.727539, 37.98381],
   "name": "Athens, Greece"
-},  {
-  "coordinates": [23.727539, 37.98381],
-  "name": "Athens, Greece"
-},  {
+}, {
   "coordinates": [174.763332, -36.84846],
   "name": "Auckland, New Zealand"
 },  {
@@ -161,9 +155,6 @@
 },  {
   "coordinates": [-79.899861, 9.359302],
   "name": "Colon, Panama"
-},  {
-  "coordinates": [12.568337, 55.676097],
-  "name": "Copenhagen, Denmark"
 },  {
   "coordinates": [12.568337, 55.676097],
   "name": "Copenhagen, Denmark"
@@ -323,9 +314,6 @@
 },  {
   "coordinates": [-157.858333, 21.306944],
   "name": "Honolulu, Hawaii"
-},  {
-  "coordinates": [-95.369803, 29.760427],
-  "name": "Houston, Texas"
 },  {
   "coordinates": [-95.369803, 29.760427],
   "name": "Houston, Texas"
@@ -495,9 +483,6 @@
   "coordinates": [136.906398, 35.181446],
   "name": "Nagoya, Japan"
 },  {
-  "coordinates": [136.906398, 35.181446],
-  "name": "Nagoya, Japan"
-},  {
   "coordinates": [-45.239495, 60.142496],
   "name": "Nanortalik, Greenland"
 },  {
@@ -552,9 +537,6 @@
   "coordinates": [140.994662, 43.190717],
   "name": "Otaru, Japan"
 },  {
-  "coordinates": [140.994662, 43.190717],
-  "name": "Otaru, Japan"
-},  {
   "coordinates": [-170.702036, -14.275632],
   "name": "Pago Pago, American Samoa"
 },  {
@@ -603,9 +585,6 @@
   "coordinates": [-90.758034, 13.930629],
   "name": "Puerto Quetzal, Guatemala"
 },  {
-  "coordinates": [-90.758034, 13.930629],
-  "name": "Puerto Quetzal, Guatemala"
-},  {
   "coordinates": [-105.225332, 20.653407],
   "name": "Puerto Vallarta, Mexico"
 },  {
@@ -615,14 +594,8 @@
   "coordinates": [-84.829421, 9.977844],
   "name": "Puntarenas, Costa Rica"
 },  {
-  "coordinates": [-84.829421, 9.977844],
-  "name": "Puntarenas, Costa Rica"
-},  {
   "coordinates": [-46.035346, 60.718986],
   "name": "Qaqortoq, Greenland"
-},  {
-  "coordinates": [-71.207981, 46.813878],
-  "name": "Quebec City, Quebec"
 },  {
   "coordinates": [-71.207981, 46.813878],
   "name": "Quebec City, Quebec"
@@ -682,9 +655,6 @@
   "name": "San Juan del Sur, Nicaragua"
 },  {
   "coordinates": [-66.105735, 18.465539],
-  "name": "San Juan Puerto Rico"
-},  {
-  "coordinates": [-66.105735, 18.465539],
   "name": "San Juan, Puerto Rico"
 },  {
   "coordinates": [-118.292246, 33.736062],
@@ -698,9 +668,6 @@
 },  {
   "coordinates": [-74.211023, 11.240355],
   "name": "Santa Marta, Colombia"
-},  {
-  "coordinates": [-70.669265, -33.44889],
-  "name": "Santiago, Chile"
 },  {
   "coordinates": [-70.669265, -33.44889],
   "name": "Santiago, Chile"
@@ -818,12 +785,6 @@
 },  {
   "coordinates": [-123.120738, 49.282729],
   "name": "Vancouver, British Columbia"
-},  {
-  "coordinates": [-123.120738, 49.282729],
-  "name": "Vancouver, British Columbia"
-},  {
-  "coordinates": [12.315515, 45.440847],
-  "name": "Venice, Italy"
 },  {
   "coordinates": [12.315515, 45.440847],
   "name": "Venice, Italy"

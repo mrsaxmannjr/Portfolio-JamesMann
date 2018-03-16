@@ -1,7 +1,7 @@
 import React from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 import Header from "./Components/Header";
@@ -17,13 +17,11 @@ const App = () => (
     <MuiThemeProvider>
       <GridDiv className="App">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
         <Footer />
       </GridDiv>
     </MuiThemeProvider>

@@ -44,6 +44,11 @@ class Contact extends Component {
       message: this.state.message,
     };
     sendEmail(data);
+    this.setState({
+      name: "",
+      email: "",
+      message: "",
+    });
   }
 
   render() {

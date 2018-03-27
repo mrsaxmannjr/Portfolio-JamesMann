@@ -18,7 +18,7 @@ const Resume = () => (
       <h1>RESUME</h1>
       <div id="resumes">
         <img id="resume" src={resumePNG} alt="resume" visibility="hidden" />
-        <a href="https://drive.google.com/uc?export=download&id=1w9caXznI3B-KBRdzXV_LiEEvaM2b8cey">
+        <a href="https://drive.google.com/uc?export=download&id=17JX_vXTlUijwD1vR1aJFW3brEXVumgmN">
           <button >Download Resume </button>
         </a>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Overdrive from "react-overdrive";
 import logo from "./js.png";
-import resumePNG from "./James Mann - Resume.png";
+import resume from "./James Mann-Resume.jpg";
 
 const Resume = () => (
   <TheResume>
@@ -17,8 +17,8 @@ const Resume = () => (
     <div>
       <h1>RESUME</h1>
       <div id="resumes">
-        <img id="resume" src={resumePNG} alt="resume" visibility="hidden" />
-        <a href="https://drive.google.com/uc?export=download&id=17JX_vXTlUijwD1vR1aJFW3brEXVumgmN">
+        <img id="resume" src={resume} alt="resume" visibility="hidden" />
+        <a href="https://drive.google.com/uc?export=download&id=1NkJonbrpj4eCIDl9m5mpyNPJYHOiHxji">
           <button >Download Resume </button>
         </a>
       </div>

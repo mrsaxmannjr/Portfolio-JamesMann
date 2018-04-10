@@ -19,7 +19,7 @@ const Main = () => (
         <p id="placeholder">placeholder</p>
       </div>
       <h1 id="intro">I am James Mann </h1>
-      <p id="about">I&#39;m a full stack web developer, musician, martial artist and gamer.</p>
+      <p id="about">I&#39;m a full stack web developer, musician, educator, martial artist and gamer.</p>
       <Overdrive id="img" duration="700" className="intro">
         <img src={logo} alt="JM logo" />
       </Overdrive>

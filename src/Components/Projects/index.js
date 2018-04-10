@@ -5,6 +5,7 @@ import ProjectModal1 from "./ProjectModal.1";
 import ProjectModal2 from "./ProjectModal.2";
 import ProjectModal3 from "./ProjectModal.3";
 import ProjectModal4 from "./ProjectModal.4";
+import ProjectModal5 from "./ProjectModal.5";
 import logo from "./js.png";
 
 const Projects = () => (
@@ -21,6 +22,7 @@ const Projects = () => (
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
         <div id="grid">
+          <ProjectModal5 />
           <ProjectModal1 />
           <ProjectModal2 />
           <ProjectModal3 />
@@ -78,11 +80,13 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          flex-wrap: wrap;
   width: 100vw;
+  height: 655px;
 }
 
 #projects h2 {
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-decoration: underline;
   font-weight: 900;
   padding: .5rem;
@@ -174,7 +178,7 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
-    height: 1300px;
+    height: 1600px;
   }
 }
 

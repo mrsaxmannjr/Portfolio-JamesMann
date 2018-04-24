@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Overdrive from "react-overdrive";
-import MediaQuery from "react-responsive";
-import logo from "./js.png";
-import Video from "../Video";
-import Poster from "../Poster";
+import React from 'react';
+import styled from 'styled-components';
+import Overdrive from 'react-overdrive';
+import MediaQuery from 'react-responsive';
+import logo from './js.png';
+import Video from '../Video';
+import Poster from '../Poster';
 
 const Main = () => (
   <div>

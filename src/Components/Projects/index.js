@@ -6,6 +6,7 @@ import ProjectModal2 from "./ProjectModal.2";
 import ProjectModal3 from "./ProjectModal.3";
 import ProjectModal4 from "./ProjectModal.4";
 import ProjectModal5 from "./ProjectModal.5";
+import ProjectModal6 from "./ProjectModal.6";
 import logo from "./js.png";
 
 const Projects = () => (
@@ -22,6 +23,7 @@ const Projects = () => (
       <h1>PROJECTS</h1>
       <section id="projects" name="projects">
         <div id="grid">
+          <ProjectModal6 />
           <ProjectModal5 />
           <ProjectModal1 />
           <ProjectModal2 />
